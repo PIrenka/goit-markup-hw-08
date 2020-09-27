@@ -1,29 +1,36 @@
 .header-nav {
   //   /* жирность текста в навигации хедера */
   font-weight: 500;
-  margin-right: auto;
+  // margin-right: auto;
+
+  @media screen and (max-width: 768px) {
+    font-weight: 18;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
 }
 
 .site-nav__item:not(:last-child) {
   //   /* отступ справа кроме последнего ли в сайт-нав */
-  margin-right: 50px;
+  // margin-right: 50px;
 }
 
 .site-nav__link {
   //   /* сделать область наведения больше */
   //   /* padding: 20px 0; */
-  padding: 33px 0; // /*можно сделать больше паддинг, подгоняя исходя из высоты хедера, и тогда марджин в .link.current::after можно убрать*/
+  //                 padding: 33px 0; // /*можно сделать больше паддинг, подгоняя исходя из высоты хедера, и тогда марджин в .link.current::after можно убрать*/
   //   /* цвет ссылок в левой навигации хедера */
   color: $minititles-color;
   position: relative;
 
-  &:hover,
-  &:focus,
-  &:active {
-    //   /* возможность выделять другим цветом ссылки при наведении курсора на них */
-    color: $active-color;
-    outline-color: $active-color;
-  }
+  //   &:hover,
+  //   &:focus,
+  //   &:active {
+  //     //   /* возможность выделять другим цветом ссылки при наведении курсора на них */
+  //     color: $active-color;
+  //     outline-color: $active-color;
+  //   }
 }
 
 .site-nav__link.current {
@@ -41,5 +48,9 @@
     border-radius: 2px;
     //   /* margin-top: 29px; */
     bottom: 0;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 8px;
+    }
   }
 }

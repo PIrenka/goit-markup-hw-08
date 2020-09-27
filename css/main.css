@@ -91,6 +91,34 @@ main {
   z-index: 1;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+  overflow: hidden;
+}
+
+.header-page__menu-button-icon {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
+  cursor: pointer;
+}
+
+.header-page__menu-button-icon:hover {
+  fill: #2196f3;
+}
+
+.header-page .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__container-menu {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  background-color: aqua;
 }
 
 .logo {
@@ -149,22 +177,20 @@ main {
 
 .header-nav {
   font-weight: 500;
-  margin-right: auto;
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 768px) {
+  .header-nav {
+    font-weight: 18;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
 }
 
 .site-nav__link {
-  padding: 33px 0;
   color: #212121;
   position: relative;
-}
-
-.site-nav__link:hover, .site-nav__link:focus, .site-nav__link:active {
-  color: #2196f3;
-  outline-color: #2196f3;
 }
 
 .site-nav__link.current {
@@ -180,6 +206,12 @@ main {
   width: 100%;
   border-radius: 2px;
   bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav__link.current::after {
+    margin-top: 8px;
+  }
 }
 
 .mail-tel-nav {
