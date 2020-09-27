@@ -1,0 +1,14 @@
+.header-page {
+  //   /* общие стили для всего Хедера */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: $title-color;
+  //   /* нижняя линия внизу хедера */
+  border-bottom: 1px solid $header-bottom-line;
+}
+
+.header-page .flexbox {
+  //   /* выравнивание по центру содержимого хедера */
+  align-items: center;
+}

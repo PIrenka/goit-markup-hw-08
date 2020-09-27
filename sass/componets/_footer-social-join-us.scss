@@ -1,0 +1,49 @@
+.footer-page__list-item-join-to-us--text {
+  //   /* стили для текста-контейнера */
+  color: $title-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  //   /* padding-top: 12px; тут костыль так как ранее задавала падинги для ул в футере:60пх */
+}
+
+.footer-page__list-join-to-us {
+  margin-right: 93px;
+}
+
+.footer-page__social-list-item:not(:last-child) {
+  //   /* отступы между кружечками сойсетей */
+  margin-right: 10px;
+}
+
+.footer-page__social-list-link {
+  //   /* стили для кружечков под иконками соц сетей */
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: none;
+  //   /* скрыть тени от круглых иконок */
+  background-color: $footer-eclipse-social-icons-color;
+  padding: 12px;
+  //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    //   /* смена заливки кружочка при ховере */
+    background-color: $active-color;
+  }
+}
+
+.footer-page__social-list-icon {
+  &--instagram,
+  &--twitter,
+  &--facebook,
+  &--linkedin {
+    //   /* размеры и заливка иконок соц сетей */
+    width: 20px;
+    height: 20px;
+    fill: $title-color;
+  }
+}

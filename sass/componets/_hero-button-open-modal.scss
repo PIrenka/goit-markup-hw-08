@@ -1,0 +1,82 @@
+.backdrop {
+  //   /* стили для оверлея при открытом модальном окне */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  //   /* позволяет "затемнить" фиксированый ранее Хедер, в противном случаи Хедер будет доступным для кликания ссылок в нем */
+
+  opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  //   /* overflow: auto; */
+}
+
+.backdrop.is-hidden {
+  //   /* стили "скрытия" слоя с модальным окном */
+  opacity: 0;
+  //   /* слой стал прозрачным, но не пускающим за себя */
+  pointer-events: none;
+  //   /* появилась возможность проникнуть сквозь слой и выбирать и нажимать на элементы страницы */
+  visibility: hidden;
+  //   /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(500%, -50%) scale(2.1) rotate(-40deg);
+  //   /* тут если убрать translate(-50%, -50%) получится тоже интересный эффект - с правого нижнего угла модалка поднимается и расширяется на центр */
+}
+
+.modal {
+  //   /* стили для модального окна */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+
+  background: $title-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  //   /* opacity: 1; */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  //   /* opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.js-form {
+  position: relative;
+}
+
+.modal__button {
+  //   /* стили для кнопки (крестик в кружочке) закрытия модального окна */
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background-color: $title-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  outline-color: $active-color;
+  //   /* для того, чтоб при нажатии на кнопку не появлялась черная рамка */
+}
+
+.modal__icon-close {
+  //   /* иконка крестика для закрытия модального окна */
+  width: 18px;
+  height: 18px;
+  fill: $logo-studio-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__button:hover &,
+  .modal__button:focus & {
+    fill: $active-color;
+  }
+}

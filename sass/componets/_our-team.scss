@@ -1,0 +1,61 @@
+.our-team {
+  //   /* стили для Наша Команда */
+  background: $team-container-background;
+}
+
+.our-team__container {
+  //   /* внутренние отступы для контейнера Наша Команда */
+  padding-top: 94px;
+  padding-bottom: 9px;
+}
+
+.our-team__container--title {
+  //   /* стили к заголовку h2 Нашей Команды */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.our-team__team-cards-list {
+  //   /* выделения места чисто под карточки */
+  //   /* flex-wrap: nowrap; */
+  width: calc((100% - 30 * 3) / 4);
+  align-items: center;
+  padding-bottom: 94px;
+}
+
+.our-team__team-cards-list-item {
+  //   /* фон карточек команды и cтили для бордера карточки*/
+  background-color: $title-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  //   /* position: relative; */
+
+  &:not(:last-child) {
+    //   /* разделение пространства между карточками */
+    margin-right: 30px;
+  }
+}
+
+.our-team__team-cards-list-item--title {
+  //   /* стили к заголовкам списка h3 Нашей Команды  */
+  padding-top: 30px;
+  //   /* padding left and right??? */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.our-team__team-cards-list-item--text {
+  //   /* стили к параграфам списка Нашей Команды  */
+  color: $inside-color;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 16px;
+}

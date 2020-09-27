@@ -1,0 +1,56 @@
+.our-team__social-list {
+  //   /* отступ и расположение списка соц сетей под в карточке члена команды */
+  padding-bottom: 30px;
+  justify-content: center;
+}
+
+.our-team__social-list-item-link {
+  //   /* стили для создания пространства-кружочка под иконкой соц сети */
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: none;
+  //   /* скрыть тени от круглых иконок */
+  background-color: $title-color;
+  padding: 12px;
+  //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    //   /* цвет подложки-кружочка соц сетей при ховере */
+    background-color: $active-color;
+  }
+}
+
+.our-team__social-list-item:not(:last-child) {
+  //   /* отступы между кружочками с иконками соц сетей */
+  margin-right: 10px;
+}
+
+.our-team__social-list-item-icon {
+  &--instagram,
+  &--twitter,
+  &--facebook,
+  &--linkedin {
+    //   /* заливка и размеры иконок соц сетей */
+    //   /* background-color: green; */
+    width: 20px;
+    height: 20px;
+    fill: $team-social-icons-fill;
+    //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .our-team__social-list-item-link:hover &--instagram,
+  .our-team__social-list-item-link:hover &--twitter,
+  .our-team__social-list-item-link:hover &--facebook,
+  .our-team__social-list-item-link:hover &--linkedin,
+  .our-team__social-list-item-link:focus &--instagram,
+  .our-team__social-list-item-link:focus &--twitter,
+  .our-team__social-list-item-link:focus &--facebook,
+  .our-team__social-list-item-link:focus &--linkedin {
+    //   /* цвет иконок соц сетей при ховере */
+    fill: $title-color;
+  }
+}

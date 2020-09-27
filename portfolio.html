@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/portfolio-styles.min.css">
+</head>
+
+<body>
+
+    <!-- Верхняя линия -->
+    <header class="header-page">
+
+        <div class="container flexbox">
+
+            <a href="./index.html" lang="en" class="link logo">
+                <span class="logo__web-logotext">Web</span><span class="logo__studio-logotext">Studio</span>
+            </a>
+
+            <nav class="header-nav">
+                <ul class="list site-nav flexbox">
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="link site-nav__link">Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href=" ./portfolio.html" class="link site-nav__link current"> <span>Портфолио</span> </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="link site-nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="list mail-tel-nav flexbox">
+                <li class="mail-tel-nav__item">
+                    <a href="mailto:info@devstudio.com" class="link mail-tel-nav__link flexbox"
+                        aria-label="Написать письмо на">
+                        <svg class="mail-tel-nav__icon-mail">
+                            <use href="./images/icons/sprite.svg#mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="mail-tel-nav__item">
+                    <a href="tel:+380991111111" class="link mail-tel-nav__link flexbox"
+                        aria-label="Позвонить по номеру">
+                        <svg class="mail-tel-nav__icon-tel">
+                            <use href="./images/icons/sprite.svg#tel"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <h1 class="hidden-title">Страница Портфолио</h1>
+
+        <section class="portfolio-page">
+            <div class="container">
+
+                <ul class="list portfolio-page__list-button flexbox">
+                    <li class="portfolio-page__list-button-item"> <button type="button" class="portfolio-page__button">
+                            <span>Все</span> </button>
+                    </li>
+                    <li class="portfolio-page__list-button-item"> <button type="button" class="portfolio-page__button">
+                            <span>Веб-сайты</span>
+                        </button>
+                    </li>
+                    <li class="portfolio-page__list-button-item"> <button type="button" class="portfolio-page__button">
+                            <span>Приложения</span>
+                        </button>
+                    </li>
+                    <li class="portfolio-page__list-button-item"> <button type="button" class="portfolio-page__button">
+                            <span>Дизайн</span>
+                        </button>
+                    </li>
+                    <li class="portfolio-page__list-button-item"> <button type="button" class="portfolio-page__button">
+                            <span>Маркетинг</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <ul class="list portfolio-page__projects-list flexbox">
+                    <!-- <h2>Сетка с пректами</h2> -->
+                    <li class="portfolio-page__projects-list-item"> <a href="/"
+                            class="link portfolio-page__projects-list-link" title="сайт Технокряка">
+                            <div class="portfolio-page__projects-list-overlay-container">
+                                <img src="./images/project-1.jpg" alt="">
+                                <p class="text portfolio-page__projects-list-overlay-text">Технокряк это современная
+                                    площадка распространения коронавируса.
+                                    Компании
+                                    используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+
+                            <div class="portfolio-page__projects-list-item-under-the-pic">
+                                <h2 class="title portfolio-page__projects-list-item-title">Технокряк</h2>
+                                <p class="text portfolio-page__projects-list-item-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-page__projects-list-item"> <a href="/"
+                            class="link portfolio-page__projects-list-link">
+                            <div class="portfolio-page__projects-list-overlay-container">
+                                <img src="./images/project-2.jpg" alt="">
+                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="portfolio-page__projects-list-item-under-the-pic">
+                                <h2 class="title portfolio-page__projects-list-item-title">Постер New Orlean vs Golden
+                                    Star</h2>
+                                <p class="text portfolio-page__projects-list-item-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-page__projects-list-item"> <a href="/"
+                            class="link portfolio-page__projects-list-link">
+                            <div class="portfolio-page__projects-list-overlay-container">
+                                <img src="./images/project-3.jpg" alt="">
+                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="portfolio-page__projects-list-item-under-the-pic">
+                                <h2 class="title portfolio-page__projects-list-item-title">Ресторан Seafood</h2>
+                                <p class="text portfolio-page__projects-list-item-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-page__projects-list-item"> <a href="/"
+                            class="link portfolio-page__projects-list-link">
+                            <div class="portfolio-page__projects-list-overlay-container">
+                                <img src="./images/project-4.jpg" alt="">
+                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="portfolio-page__projects-list-item-under-the-pic">
+                                <h2 class="title portfolio-page__projects-list-item-title">Проект Prime</h2>
+                                <p class="text portfolio-page__projects-list-item-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-page__projects-list-item"> <a href="/"
+                            class="link portfolio-page__projects-list-link">
+                            <div class="portfolio-page__projects-list-overlay-container">
+                                <img src="./images/project-5.jpg" alt="">
+                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="portfolio-page__projects-list-item-under-the-pic">
+                                <h2 class="title portfolio-page__projects-list-item-title">Проект Boxes</h2>
+                                <p class="text portfolio-page__projects-list-item-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-page__projects-list-item"> <a href="/"
+                            class="link portfolio-page__projects-list-link">
+                            <div class="portfolio-page__projects-list-overlay-container">
+                                <img src="./images/project-6.jpg" alt="">
+                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="portfolio-page__projects-list-item-under-the-pic">
+                                <h2 class="title portfolio-page__projects-list-item-title">Inspiration has no Borders
+                                </h2>
+                                <p class="text portfolio-page__projects-list-item-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-page__projects-list-item"> <a href="/"
+                            class="link portfolio-page__projects-list-link">
+                            <div class="portfolio-page__projects-list-overlay-container">
+                                <img src="./images/project-7.jpg" alt="">
+                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="portfolio-page__projects-list-item-under-the-pic">
+                                <h2 class="title portfolio-page__projects-list-item-title">Издание Limited Edition</h2>
+                                <p class="text portfolio-page__projects-list-item-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-page__projects-list-item"> <a href="/"
+                            class="link portfolio-page__projects-list-link">
+                            <div class="portfolio-page__projects-list-overlay-container">
+                                <img src="./images/project-8.jpg" alt="">
+                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="portfolio-page__projects-list-item-under-the-pic">
+                                <h2 class="title portfolio-page__projects-list-item-title">Проект LAB</h2>
+                                <p class="text portfolio-page__projects-list-item-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-page__projects-list-item"> <a href="/"
+                            class="link portfolio-page__projects-list-link">
+                            <div class="portfolio-page__projects-list-overlay-container">
+                                <img src="./images/project-9.jpg" alt="">
+                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="portfolio-page__projects-list-item-under-the-pic">
+                                <h2 class="title portfolio-page__projects-list-item-title">Growing Business</h2>
+                                <p class="text portfolio-page__projects-list-item-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer-page">
+        <div class="container footer-page__container flexbox">
+
+            <ul class="list footer-page__list-general-contacts">
+                <li class="item">
+                    <a href="./index.html" lang="en" class="link logo footer-page__logo"> <span
+                            class="logo__web-logotext">Web</span><span
+                            class="logo__studio-logotext footer-page__list-general-contacts--logo__studio-logotext">Studio</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <address>
+                        <span class="footer-page__list-general-contacts--address">г. Киев, пр-т Леси Украинки, 26</span>
+                    </address>
+                </li>
+                <li class="item"> <a href="mailto:info@example.com"
+                        class="link footer-page__list-general-contacts--mailtel">info@example.com</a>
+                </li>
+                <li class="item"> <a href="tel:+380991111111"
+                        class="link footer-page__list-general-contacts--mailtel">+38
+                        099 111 11 11</a>
+                </li>
+            </ul>
+
+            <ul class="list footer-page__list-join-to-us">
+                <li class="item">
+                    <p class="text footer-page__list-item-join-to-us--text">присоединяйтесь</p>
+                </li>
+                <li class="item">
+                    <ul class="list footer-page__social-list flexbox">
+                        <li class="footer-page__social-list-item"> <a href="https://www.instagram.com/" target="_blank"
+                                class="link footer-page__social-list-link flexbox">
+                                <svg class="footer-page__social-list-icon--instagram">
+                                    <use href="./images/icons/sprite.svg#instagram"></use>
+                                </svg></a> </li>
+                        <li class="footer-page__social-list-item"> <a href="https://www.twitter.com/" target="_blank"
+                                class="link footer-page__social-list-link flexbox">
+                                <svg class="footer-page__social-list-icon--twitter">
+                                    <use href="./images/icons/sprite.svg#twitter"> </use>
+                                </svg></a></li>
+                        <li class="footer-page__social-list-item"> <a href="https://www.facebook.com/" target="_blank"
+                                class="link footer-page__social-list-link flexbox">
+                                <svg class="footer-page__social-list-icon--facebook">
+                                    <use href="./images/icons/sprite.svg#facebook"> </use>
+                                </svg></a></li>
+                        <li class="footer-page__social-list-item"> <a href="https://www.linkedin.com/" target="_blank"
+                                class="link footer-page__social-list-link flexbox">
+                                <svg class="footer-page__social-list-icon--linkedin">
+                                    <use href="./images/icons/sprite.svg#linkedin"> </use>
+                                </svg></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list footer-page__form-container">
+                <li class="item">
+                    <p class="text footer-page__form-container--text">Подпишитесь на рассылку</p>
+                </li>
+                <li class="flexbox">
+                    <form class="js-form flexbox footer-form" id="footer-form">
+                        <label for="mail-submit"></label>
+                        <input class="footer-form__field" type="email" name="mail-submit" id="mail-submit"
+                            placeholder="E-mail">
+                        <button type="submit" class="footer-form__button-submit">Подписаться
+                            <!-- <svg class="icon">
+                                    <use href="./images/icons/sprite.svg#footer-icon-send"> </use>
+                                </svg> -->
+
+                        </button>
+                    </form>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./js/js-form.js"></script>
+
+</body>
+
+</html>
