@@ -93,24 +93,50 @@ main {
   border-bottom: 1px solid #ececec;
 }
 
-.header-page .flexbox {
-  align-items: center;
-}
-
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  display: inline-block;
   outline-color: #2196f3;
 }
 
-.header-page .logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 93px;
+@media screen and (max-width: 1200px) {
+  .logo {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: left;
+    vertical-align: text-top;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-page .logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header-page .logo {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-page .logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
 .logo__web-logotext {
