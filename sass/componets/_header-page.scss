@@ -7,15 +7,25 @@
   //   /* нижняя линия внизу хедера */
   border-bottom: 1px solid $header-bottom-line;
 
-  & .flexbox {
-    //   /* выравнивание по центру содержимого хедера */
-    align-items: center;
-  }
+  // & .flexbox {
+  //   //   /* выравнивание по центру содержимого хедера */
+  //   align-items: center;
+  // }
 
   & .logo {
     // /* стили геометрии (отступов) для логотипа в целом */
-    margin-top: 24px;
-    margin-bottom: 25px;
-    margin-right: 93px;
+    @include for-size(tablet-only) {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    @include for-size(tablet-desktop) {
+      margin-top: 26px;
+      margin-bottom: 26px;
+    }
+    @include for-size(desktop) {
+      margin-top: 24px;
+      margin-bottom: 25px;
+      margin-right: 93px;
+    }
   }
 }
