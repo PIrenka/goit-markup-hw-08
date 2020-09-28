@@ -6,38 +6,43 @@
   &__item:not(:last-child) {
     margin-right: 30px;
   }
+}
 
-  &__icon-mail {
-    //   /* стили для иконки почты, цвет со спрайта-удалён */
-    width: 16px;
-    height: 12px;
-    fill: $inside-color;
-    margin-right: 10px;
+.mail-tel-nav__icon-mail {
+  //   /* стили для иконки почты, цвет со спрайта-удалён */
+  width: 16px;
+  height: 12px;
+  fill: $inside-color;
+  margin-right: 10px;
+  //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .mail-tel-nav__link:hover &,
+  .mail-tel-nav__link:focus & {
+    fill: $active-color;
   }
+}
 
-  &__icon-tel {
-    //   /* стили для иконки телефона */
-    width: 10px;
-    height: 16px;
-    fill: $inside-color;
-    margin-right: 10px;
-    //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.mail-tel-nav__icon-tel {
+  //   /* стили для иконки телефона */
+  width: 10px;
+  height: 16px;
+  fill: $inside-color;
+  margin-right: 10px;
+  //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .mail-tel-nav__link:hover &,
+  .mail-tel-nav__link:focus & {
+    fill: $active-color;
   }
+}
 
-  &__link {
-    &:hover,
-    &:focus {
-      //   /* возможность выделять другим цветом ссылки при наведении курсора на них */
-      color: $active-color;
-      outline-color: $active-color;
-    }
-
-    &:hover .mail-tel-nav__icon-tel,
-    &:focus .mail-tel-nav__icon-tel,
-    &:hover .mail-tel-nav__icon-mail,
-    &:focus .mail-tel-nav__icon-mail {
-      fill: $active-color;
-    }
+.mail-tel-nav__link {
+  &:hover,
+  &:focus {
+    //   /* возможность выделять другим цветом ссылки при наведении курсора на них */
+    color: $active-color;
+    outline-color: $active-color;
   }
 }

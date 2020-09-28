@@ -1,12 +1,14 @@
-.footer-page__list-general-contacts--address {
-  //   /* стили для почтового адреса в футере */
-  font-style: normal;
-  color: $title-color;
-  display: block;
-}
+.footer-page__list-general-contacts {
+  &--address {
+    //   /* стили для почтового адреса в футере */
+    font-style: normal;
+    color: $title-color;
+    display: block;
+  }
 
-.footer-page__list-general-contacts--mailtel {
-  //   /* стили для номера телефона в футере */
-  color: $tel-in-footer-color;
-  margin-top: 9px;
+  &--mailtel {
+    //   /* стили для номера телефона в футере */
+    color: $tel-in-footer-color;
+    margin-top: 9px;
+  }
 }

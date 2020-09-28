@@ -1,40 +1,10 @@
-.portfolio-page__projects-list {
+.portfolio-projects__list {
   //   /* распределение карточек в ряд, после их стало по три в одном ряду */
   //   /* flex-wrap: wrap; - это перенесла в начало в класс .flexbox*/
   padding-bottom: 94px;
 }
 
-.portfolio-page__projects-list-link {
-  color: inherit;
-  //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
-  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-page__projects-list-item-under-the-pic {
-  //   /* отступы для контейнера текста под картинкой в карточке Проекты */
-  padding: 20px 24px;
-  //   /* text-align: left;
-  //   vertical-align: top; */
-}
-
-.portfolio-page__projects-list-item-title {
-  //   /* стили для заголовков в карточках Проектов */
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.71;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-
-.portfolio-page__projects-list-item-text {
-  //   /* стили для параграфов в карточках Проекто */
-  font-size: 16px;
-  line-height: 1.87;
-  color: $inside-color;
-}
-
-//  ===================================================
-.portfolio-page__projects-list-item {
+.portfolio-projects__list-item {
   //   /* размер ширины под одну карточку */
   flex-basis: calc((100% - 30px * 2) / 3);
   //   /* отступы для карточек справа и снизу для всех в проектах Портфолио */
@@ -61,34 +31,64 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
+
+  &--link {
+    color: inherit;
+    //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
+    // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &--title {
+    //   /* стили для заголовков в карточках Проектов */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.71;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+
+  &--text {
+    //   /* стили для параграфов в карточках Проекто */
+    font-size: 16px;
+    line-height: 1.87;
+    color: $inside-color;
+  }
+
+  &--under-the-pic {
+    //   /* отступы для контейнера текста под картинкой в карточке Проекты */
+    padding: 20px 24px;
+    //   /* text-align: left;
+    //   vertical-align: top; */
+  }
 }
-// ==============================================
-.portfolio-page__projects-list-overlay-container {
+//  ======================for overlay============================
+
+.portfolio-projects__list-item-overlay-container {
   //   /* это для контейнера, который содержит фото для которого применяется оверлей с текстом */
   position: relative;
   overflow: hidden;
-}
 
-.portfolio-page__projects-list-overlay-text {
-  //   /* стили для оверлея (поверх картинок в Проектах)*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(33, 150, 243, 0.9);
-  color: $title-color;
-  font-size: 18px;
-  line-height: 1.56;
-  padding: 63px 24px;
-  transform: translatey(100%);
-  //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  //   /* transition: transform 250ms ease; */
+  &--text {
+    //   /* стили для оверлея (поверх картинок в Проектах)*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    color: $title-color;
+    font-size: 18px;
+    line-height: 1.56;
+    padding: 63px 24px;
+    transform: translatey(100%);
+    //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    //   /* transition: transform 250ms ease; */
 
-  .portfolio-page__projects-list-item:hover &,
-  .portfolio-page__projects-list-item:focus & {
-    //   /* стили для анимации оверлея Проектов при ховере */
-    transform: translatey(0);
+    .portfolio-projects__list-item:hover &,
+    .portfolio-projects__list-item:focus & {
+      //   /* стили для анимации оверлея Проектов при ховере */
+      transform: translatey(0);
+    }
   }
 }

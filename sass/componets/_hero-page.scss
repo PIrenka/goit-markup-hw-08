@@ -1,9 +1,3 @@
-.hero-page {
-  //   /*  стили для секции Hero, особенно для фона Героя если не подгрузился файл CSS*/
-  background: $hero-background-color;
-  //   /* outline: 5px solid orange; */
-}
-
 .container-hero {
   //   /* стили для контейнера Героя с заголовком и кнопкой */
   //   /* outline: 5px solid yellow; */
@@ -20,34 +14,40 @@
   background-size: auto;
 }
 
-.hero-page__title {
-  //   /* стили для заголовка сайта в Hero */
-  color: $title-color;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 30px;
-  max-width: 650px;
-  //   /* outline: 5px solid red; */
-}
+.hero-page {
+  //   /*  стили для секции Hero, особенно для фона Героя если не подгрузился файл CSS*/
+  background: $hero-background-color;
+  //   /* outline: 5px solid orange; */
 
-.hero-page__button {
-  //   /* стили для кнопки Заказать Услугу */
-  color: $title-color;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  background-color: $active-color;
-  letter-spacing: 0.06em;
-  //   /* outline: 2px solid orange; */
+  &__title {
+    //   /* стили для заголовка сайта в Hero */
+    color: $title-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 650px;
+    //   /* outline: 5px solid red; */
+  }
 
-  padding: 10px 32px;
-  border: none;
-  outline-color: $active-color;
-  //   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-  border-radius: 4px;
-  cursor: pointer;
+  &__button {
+    //   /* стили для кнопки Заказать Услугу */
+    color: $title-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    background-color: $active-color;
+    letter-spacing: 0.06em;
+    //   /* outline: 2px solid orange; */
+
+    padding: 10px 32px;
+    border: none;
+    outline-color: $active-color;
+    //   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }

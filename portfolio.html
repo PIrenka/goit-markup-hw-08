@@ -24,42 +24,36 @@
                 <span class="logo__web-logotext">Web</span><span class="logo__studio-logotext">Studio</span>
             </a>
 
-            <svg class="header-page__menu-button-icon">
-                <use href="./images/icons/sprite.svg#menu-button-icon"></use>
-            </svg>
-
-            <div class="header__container-menu">
-                <nav class="header-nav">
-                    <ul class="list site-nav flexbox">
-                        <li class="site-nav__item">
-                            <a href="./index.html" class="link site-nav__link">Студия</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href=" ./portfolio.html" class="link site-nav__link current"> <span>Портфолио</span> </a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href="./index.html" class="link site-nav__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <ul class="list mail-tel-nav flexbox">
-                    <li class="mail-tel-nav__item">
-                        <a href="mailto:info@devstudio.com" class="link mail-tel-nav__link flexbox"
-                            aria-label="Написать письмо на">
-                            <svg class="mail-tel-nav__icon-mail">
-                                <use href="./images/icons/sprite.svg#mail"></use>
-                            </svg>info@devstudio.com</a>
+            <nav class="header-nav">
+                <ul class="list site-nav flexbox">
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="link site-nav__link">Студия</a>
                     </li>
-                    <li class="mail-tel-nav__item">
-                        <a href="tel:+380991111111" class="link mail-tel-nav__link flexbox"
-                            aria-label="Позвонить по номеру">
-                            <svg class="mail-tel-nav__icon-tel">
-                                <use href="./images/icons/sprite.svg#tel"></use>
-                            </svg>+38 096 111 11 11</a>
+                    <li class="site-nav__item">
+                        <a href=" ./portfolio.html" class="link site-nav__link current"> <span>Портфолио</span> </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="link site-nav__link">Контакты</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+
+            <ul class="list mail-tel-nav flexbox">
+                <li class="mail-tel-nav__item">
+                    <a href="mailto:info@devstudio.com" class="link mail-tel-nav__link flexbox"
+                        aria-label="Написать письмо на">
+                        <svg class="mail-tel-nav__icon-mail">
+                            <use href="./images/icons/sprite.svg#mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="mail-tel-nav__item">
+                    <a href="tel:+380991111111" class="link mail-tel-nav__link flexbox"
+                        aria-label="Позвонить по номеру">
+                        <svg class="mail-tel-nav__icon-tel">
+                            <use href="./images/icons/sprite.svg#tel"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
 
         </div>
 
@@ -94,136 +88,145 @@
                     </li>
                 </ul>
 
-                <ul class="list portfolio-page__projects-list flexbox">
+                <ul class="list portfolio-projects__list flexbox">
                     <!-- <h2>Сетка с пректами</h2> -->
-                    <li class="portfolio-page__projects-list-item"> <a href="/"
-                            class="link portfolio-page__projects-list-link" title="сайт Технокряка">
-                            <div class="portfolio-page__projects-list-overlay-container">
+                    <li class="portfolio-projects__list-item"> <a href="/"
+                            class="link portfolio-projects__list-item--link" title="сайт Технокряка">
+                            <div class="portfolio-projects__list-item-overlay-container">
                                 <img src="./images/project-1.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Технокряк это современная
+                                <p class="text portfolio-projects__list-item-overlay-container--text">Технокряк это
+                                    современная
                                     площадка распространения коронавируса.
                                     Компании
                                     используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
 
-                            <div class="portfolio-page__projects-list-item-under-the-pic">
-                                <h2 class="title portfolio-page__projects-list-item-title">Технокряк</h2>
-                                <p class="text portfolio-page__projects-list-item-text">Веб-сайт</p>
+                            <div class="portfolio-projects__list-item--under-the-pic">
+                                <h2 class="title portfolio-projects__list-item--title">Технокряк</h2>
+                                <p class="text portfolio-projects__list-item--text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-page__projects-list-item"> <a href="/"
-                            class="link portfolio-page__projects-list-link">
-                            <div class="portfolio-page__projects-list-overlay-container">
+                    <li class="portfolio-projects__list-item"> <a href="/"
+                            class="link portfolio-projects__list-item--link">
+                            <div class="portfolio-projects__list-item-overlay-container">
                                 <img src="./images/project-2.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
+                                <p class="text portfolio-projects__list-item-overlay-container--text">Lorem ipsum dolor
+                                    sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
 
-                            <div class="portfolio-page__projects-list-item-under-the-pic">
-                                <h2 class="title portfolio-page__projects-list-item-title">Постер New Orlean vs Golden
+                            <div class="portfolio-projects__list-item--under-the-pic">
+                                <h2 class="title portfolio-projects__list-item--title">Постер New Orlean vs Golden
                                     Star</h2>
-                                <p class="text portfolio-page__projects-list-item-text">Дизайн</p>
+                                <p class="text portfolio-projects__list-item--text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-page__projects-list-item"> <a href="/"
-                            class="link portfolio-page__projects-list-link">
-                            <div class="portfolio-page__projects-list-overlay-container">
+                    <li class="portfolio-projects__list-item"> <a href="/"
+                            class="link portfolio-projects__list-item--link">
+                            <div class="portfolio-projects__list-item-overlay-container">
                                 <img src="./images/project-3.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
+                                <p class="text portfolio-projects__list-item-overlay-container--text">Lorem ipsum dolor
+                                    sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
 
-                            <div class="portfolio-page__projects-list-item-under-the-pic">
-                                <h2 class="title portfolio-page__projects-list-item-title">Ресторан Seafood</h2>
-                                <p class="text portfolio-page__projects-list-item-text">Приложение</p>
+                            <div class="portfolio-projects__list-item--under-the-pic">
+                                <h2 class="title portfolio-projects__list-item--title">Ресторан Seafood</h2>
+                                <p class="text portfolio-projects__list-item--text">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-page__projects-list-item"> <a href="/"
-                            class="link portfolio-page__projects-list-link">
-                            <div class="portfolio-page__projects-list-overlay-container">
+                    <li class="portfolio-projects__list-item"> <a href="/"
+                            class="link portfolio-projects__list-item--link">
+                            <div class="portfolio-projects__list-item-overlay-container">
                                 <img src="./images/project-4.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
+                                <p class="text portfolio-projects__list-item-overlay-container--text">Lorem ipsum dolor
+                                    sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
 
-                            <div class="portfolio-page__projects-list-item-under-the-pic">
-                                <h2 class="title portfolio-page__projects-list-item-title">Проект Prime</h2>
-                                <p class="text portfolio-page__projects-list-item-text">Маркетинг</p>
+                            <div class="portfolio-projects__list-item--under-the-pic">
+                                <h2 class="title portfolio-projects__list-item--title">Проект Prime</h2>
+                                <p class="text portfolio-projects__list-item--text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-page__projects-list-item"> <a href="/"
-                            class="link portfolio-page__projects-list-link">
-                            <div class="portfolio-page__projects-list-overlay-container">
+                    <li class="portfolio-projects__list-item"> <a href="/"
+                            class="link portfolio-projects__list-item--link">
+                            <div class="portfolio-projects__list-item-overlay-container">
                                 <img src="./images/project-5.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
+                                <p class="text portfolio-projects__list-item-overlay-container--text">Lorem ipsum dolor
+                                    sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
 
-                            <div class="portfolio-page__projects-list-item-under-the-pic">
-                                <h2 class="title portfolio-page__projects-list-item-title">Проект Boxes</h2>
-                                <p class="text portfolio-page__projects-list-item-text">Приложение</p>
+                            <div class="portfolio-projects__list-item--under-the-pic">
+                                <h2 class="title portfolio-projects__list-item--title">Проект Boxes</h2>
+                                <p class="text portfolio-projects__list-item--text">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-page__projects-list-item"> <a href="/"
-                            class="link portfolio-page__projects-list-link">
-                            <div class="portfolio-page__projects-list-overlay-container">
+                    <li class="portfolio-projects__list-item"> <a href="/"
+                            class="link portfolio-projects__list-item--link">
+                            <div class="portfolio-projects__list-item-overlay-container">
                                 <img src="./images/project-6.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
+                                <p class="text portfolio-projects__list-item-overlay-container--text">Lorem ipsum dolor
+                                    sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
 
-                            <div class="portfolio-page__projects-list-item-under-the-pic">
-                                <h2 class="title portfolio-page__projects-list-item-title">Inspiration has no Borders
+                            <div class="portfolio-projects__list-item--under-the-pic">
+                                <h2 class="title portfolio-projects__list-item--title">Inspiration has no Borders
                                 </h2>
-                                <p class="text portfolio-page__projects-list-item-text">Веб-сайт</p>
+                                <p class="text portfolio-projects__list-item--text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-page__projects-list-item"> <a href="/"
-                            class="link portfolio-page__projects-list-link">
-                            <div class="portfolio-page__projects-list-overlay-container">
+                    <li class="portfolio-projects__list-item"> <a href="/"
+                            class="link portfolio-projects__list-item--link">
+                            <div class="portfolio-projects__list-item-overlay-container">
                                 <img src="./images/project-7.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
+                                <p class="text portfolio-projects__list-item-overlay-container--text">Lorem ipsum dolor
+                                    sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
 
-                            <div class="portfolio-page__projects-list-item-under-the-pic">
-                                <h2 class="title portfolio-page__projects-list-item-title">Издание Limited Edition</h2>
-                                <p class="text portfolio-page__projects-list-item-text">Дизайн</p>
+                            <div class="portfolio-projects__list-item--under-the-pic">
+                                <h2 class="title portfolio-projects__list-item--title">Издание Limited Edition</h2>
+                                <p class="text portfolio-projects__list-item--text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-page__projects-list-item"> <a href="/"
-                            class="link portfolio-page__projects-list-link">
-                            <div class="portfolio-page__projects-list-overlay-container">
+                    <li class="portfolio-projects__list-item"> <a href="/"
+                            class="link portfolio-projects__list-item--link">
+                            <div class="portfolio-projects__list-item-overlay-container">
                                 <img src="./images/project-8.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
+                                <p class="text portfolio-projects__list-item-overlay-container--text">Lorem ipsum dolor
+                                    sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
 
-                            <div class="portfolio-page__projects-list-item-under-the-pic">
-                                <h2 class="title portfolio-page__projects-list-item-title">Проект LAB</h2>
-                                <p class="text portfolio-page__projects-list-item-text">Маркетинг</p>
+                            <div class="portfolio-projects__list-item--under-the-pic">
+                                <h2 class="title portfolio-projects__list-item--title">Проект LAB</h2>
+                                <p class="text portfolio-projects__list-item--text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-page__projects-list-item"> <a href="/"
-                            class="link portfolio-page__projects-list-link">
-                            <div class="portfolio-page__projects-list-overlay-container">
+                    <li class="portfolio-projects__list-item"> <a href="/"
+                            class="link portfolio-projects__list-item--link">
+                            <div class="portfolio-projects__list-item-overlay-container">
                                 <img src="./images/project-9.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
+                                <p class="text portfolio-projects__list-item-overlay-container--text">Lorem ipsum dolor
+                                    sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
 
-                            <div class="portfolio-page__projects-list-item-under-the-pic">
-                                <h2 class="title portfolio-page__projects-list-item-title">Growing Business</h2>
-                                <p class="text portfolio-page__projects-list-item-text">Приложение</p>
+                            <div class="portfolio-projects__list-item--under-the-pic">
+                                <h2 class="title portfolio-projects__list-item--title">Growing Business</h2>
+                                <p class="text portfolio-projects__list-item--text">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -241,7 +244,7 @@
                 <li class="item">
                     <a href="./index.html" lang="en" class="link logo footer-page__logo"> <span
                             class="logo__web-logotext">Web</span><span
-                            class="logo__studio-logotext footer-page__list-general-contacts--logo__studio-logotext">Studio</span>
+                            class="logo__studio-logotext footer-page__logo--studio-logotext">Studio</span>
                     </a>
                 </li>
                 <li class="item">
@@ -260,7 +263,7 @@
 
             <ul class="list footer-page__list-join-to-us">
                 <li class="item">
-                    <p class="text footer-page__list-item-join-to-us--text">присоединяйтесь</p>
+                    <p class="text footer-page__list-join-to-us--text">присоединяйтесь</p>
                 </li>
                 <li class="item">
                     <ul class="list footer-page__social-list flexbox">
@@ -299,8 +302,8 @@
                             placeholder="E-mail">
                         <button type="submit" class="footer-form__button-submit">Подписаться
                             <!-- <svg class="icon">
-                                    <use href="./images/icons/sprite.svg#footer-icon-send"> </use>
-                                </svg> -->
+                                <use href="./images/icons/sprite.svg#footer-icon-send"> </use>
+                            </svg> -->
 
                         </button>
                     </form>

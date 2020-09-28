@@ -1,16 +1,16 @@
 .our-clients__container {
   //   /* вверхний и нижний отступ для контента контейнера*/
   padding: 94px 15px;
-}
 
-.our-clients__container--title {
-  //   /* стили для заголовка Постоянные Клиенты */
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  &--title {
+    //   /* стили для заголовка Постоянные Клиенты */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .our-clients__list-item {
@@ -51,82 +51,48 @@
     //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     //   /* размеры можно задать для каждого, класса. но прописывать в каждой иконке свою ширину и высоту в спрайте НЕ СТОИТ (тогда не убераеться зарезервированое место под иконку - 300*150 !! */
+
+    .our-clients__list-item:hover &,
+    .our-clients__list-item:focus & {
+      //   /* заливка иконок логотипов компаний при ховере */
+      fill: $active-color;
+      cursor: pointer;
+    }
   }
-}
-.our-clients__list-item-icon--client-1 {
-  //   /* размеры и расположение логотипа компании-1 */
-  width: 44.27px;
-  height: 49.23px;
 
-  .our-clients__list-item:hover &,
-  .our-clients__list-item:focus & {
-    //   /* заливка иконок логотипов компаний при ховере */
-    fill: $active-color;
-    cursor: pointer;
+  &--client-1 {
+    //   /* размеры и расположение логотипа компании-1 */
+    width: 44.27px;
+    height: 49.23px;
   }
-}
 
-.our-clients__list-item-icon--client-2 {
-  //   /* размеры и расположение логотипа компании-2 */
-  width: 40px;
-  height: 52px;
-
-  .our-clients__list-item:hover &,
-  .our-clients__list-item:focus & {
-    //   /* заливка иконок логотипов компаний при ховере */
-    fill: $active-color;
-    cursor: pointer;
+  &--client-2 {
+    //   /* размеры и расположение логотипа компании-2 */
+    width: 40px;
+    height: 52px;
   }
-}
 
-.our-clients__list-item-icon--client-3 {
-  //   /* размеры и расположение логотипа компании-3 */
-  width: 41px;
-  height: 42.6px;
-
-  .our-clients__list-item:hover &,
-  .our-clients__list-item:focus & {
-    //   /* заливка иконок логотипов компаний при ховере */
-    fill: $active-color;
-    cursor: pointer;
+  &--client-3 {
+    //   /* размеры и расположение логотипа компании-3 */
+    width: 41px;
+    height: 42.6px;
   }
-}
 
-.our-clients__list-item-icon--client-4 {
-  //   /* размеры и расположение логотипа компании-4 */
-  width: 79.66px;
-  height: 42.02px;
-
-  .our-clients__list-item:hover &,
-  .our-clients__list-item:focus & {
-    //   /* заливка иконок логотипов компаний при ховере */
-    fill: $active-color;
-    cursor: pointer;
+  &--client-4 {
+    //   /* размеры и расположение логотипа компании-4 */
+    width: 79.66px;
+    height: 42.02px;
   }
-}
 
-.our-clients__list-item-icon--client-5 {
-  //   /* размеры и расположение логотипа компании-5 */
-  width: 59px;
-  height: 47px;
-
-  .our-clients__list-item:hover &,
-  .our-clients__list-item:focus & {
-    //   /* заливка иконок логотипов компаний при ховере */
-    fill: $active-color;
-    cursor: pointer;
+  &--client-5 {
+    //   /* размеры и расположение логотипа компании-5 */
+    width: 59px;
+    height: 47px;
   }
-}
 
-.our-clients__list-item-icon--client-6 {
-  //   /* размеры и расположение логотипа компании-6 */
-  width: 88.48px;
-  height: 45.44px;
-
-  .our-clients__list-item:hover &,
-  .our-clients__list-item:focus & {
-    //   /* заливка иконок логотипов компаний при ховере */
-    fill: $active-color;
-    cursor: pointer;
+  &--client-6 {
+    //   /* размеры и расположение логотипа компании-6 */
+    width: 88.48px;
+    height: 45.44px;
   }
 }

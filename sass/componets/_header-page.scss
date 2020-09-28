@@ -7,40 +7,15 @@
   //   /* нижняя линия внизу хедера */
   border-bottom: 1px solid $header-bottom-line;
 
-  overflow: hidden;
-
-  &__menu-button-icon {
-    width: 40px;
-    height: 40px;
-    fill: $logo-studio-color;
-    cursor: pointer;
-
-    &:hover {
-      fill: $active-color;
-    }
+  & .flexbox {
+    //   /* выравнивание по центру содержимого хедера */
+    align-items: center;
   }
 
-  & .container {
-    display: flex;
-    justify-content: space-between;
-    // overflow: hidden;
+  & .logo {
+    // /* стили геометрии (отступов) для логотипа в целом */
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
   }
-}
-
-// .header-page .flexbox {
-//   //   /* выравнивание по центру содержимого хедера */
-//   align-items: center;
-// }
-
-.header__container-menu {
-  position: absolute;
-  margin: 0 auto;
-  // margin-top: 60px;
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translatey(100%);
-  background-color: aqua;
 }

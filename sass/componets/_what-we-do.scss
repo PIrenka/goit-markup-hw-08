@@ -1,14 +1,16 @@
-.whatwedo__container {
-  //   /* внутренние отступы для контейнера Чем Мы Занимаемся  */
-  padding-bottom: 94px;
-}
+.whatwedo {
+  &__container {
+    //   /* внутренние отступы для контейнера Чем Мы Занимаемся  */
+    padding-bottom: 94px;
+  }
 
-.whatwedo__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.71;
-  text-align: center;
-  margin-bottom: 50px;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.71;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .whatwedo__list-item {
@@ -19,21 +21,21 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
 
-.whatwedo__list-item--uppertext {
-  //   /* стили для полупрозрачного блока с текстом поверх фото */
-  position: absolute;
-  //   /* display: block; */
-  bottom: 0;
-  right: 0;
-  background: rgba(47, 48, 58, 0.8);
-  height: 70px;
-  width: 100%;
-  color: $title-color;
-  font-weight: 700;
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 27px 82px;
+  &--uppertext {
+    //   /* стили для полупрозрачного блока с текстом поверх фото */
+    position: absolute;
+    //   /* display: block; */
+    bottom: 0;
+    right: 0;
+    background: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 100%;
+    color: $title-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 27px 82px;
+  }
 }

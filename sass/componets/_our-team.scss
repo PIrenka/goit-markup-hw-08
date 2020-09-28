@@ -1,29 +1,29 @@
 .our-team {
   //   /* стили для Наша Команда */
   background: $team-container-background;
-}
 
-.our-team__container {
-  //   /* внутренние отступы для контейнера Наша Команда */
-  padding-top: 94px;
-  padding-bottom: 9px;
-}
+  &__container {
+    //   /* внутренние отступы для контейнера Наша Команда */
+    padding-top: 94px;
+    padding-bottom: 9px;
 
-.our-team__container--title {
-  //   /* стили к заголовку h2 Нашей Команды */
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
+    &--title {
+      //   /* стили к заголовку h2 Нашей Команды */
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
 
-.our-team__team-cards-list {
-  //   /* выделения места чисто под карточки */
-  //   /* flex-wrap: nowrap; */
-  width: calc((100% - 30 * 3) / 4);
-  align-items: center;
-  padding-bottom: 94px;
+  &__team-cards-list {
+    //   /* выделения места чисто под карточки */
+    //   /* flex-wrap: nowrap; */
+    width: calc((100% - 30 * 3) / 4);
+    align-items: center;
+    padding-bottom: 94px;
+  }
 }
 
 .our-team__team-cards-list-item {
@@ -38,24 +38,24 @@
     //   /* разделение пространства между карточками */
     margin-right: 30px;
   }
-}
 
-.our-team__team-cards-list-item--title {
-  //   /* стили к заголовкам списка h3 Нашей Команды  */
-  padding-top: 30px;
-  //   /* padding left and right??? */
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-bottom: 10px;
-}
+  &--title {
+    //   /* стили к заголовкам списка h3 Нашей Команды  */
+    padding-top: 30px;
+    //   /* padding left and right??? */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-.our-team__team-cards-list-item--text {
-  //   /* стили к параграфам списка Нашей Команды  */
-  color: $inside-color;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-bottom: 16px;
+  &--text {
+    //   /* стили к параграфам списка Нашей Команды  */
+    color: $inside-color;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+  }
 }

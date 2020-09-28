@@ -2,45 +2,19 @@
   // /*общие стили для логотипа в целом */
   font-family: Raleway, sans-serif;
   font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  display: inline-block;
   outline-color: $active-color;
 
-  @media screen and (max-width: 1200px) {
-    display: inline-block;
+  &__web-logotext {
+    // /* стили для части Web в логотипе */
+    color: $active-color;
+  }
 
-    font-size: 24px;
-    line-height: 1.17;
-    text-align: left;
-    vertical-align: text-top;
+  &__studio-logotext {
+    // /* стили для части Studio в логотипе */
+    color: $logo-studio-color;
   }
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    line-height: 1.19;
-    display: inline-block;
-  }
-}
-
-.header-page .logo {
-  // /* стили геометрии (отступов) для логотипа в целом */
-  @media screen and (max-width: 768px) {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    margin-top: 26px;
-    margin-bottom: 26px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-top: 24px;
-    margin-bottom: 25px;
-    margin-right: 93px;
-  }
-}
-.logo__web-logotext {
-  // /* стили для части Web в логотипе */
-  color: $active-color;
-}
-
-.logo__studio-logotext {
-  // /* стили для части Studio в логотипе */
-  color: $logo-studio-color;
 }

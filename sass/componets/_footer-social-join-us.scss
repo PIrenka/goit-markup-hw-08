@@ -1,15 +1,15 @@
-.footer-page__list-item-join-to-us--text {
-  //   /* стили для текста-контейнера */
-  color: $title-color;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  //   /* padding-top: 12px; тут костыль так как ранее задавала падинги для ул в футере:60пх */
-}
-
 .footer-page__list-join-to-us {
   margin-right: 93px;
+
+  &--text {
+    //   /* стили для текста-контейнера */
+    color: $title-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    //   /* padding-top: 12px; тут костыль так как ранее задавала падинги для ул в футере:60пх */
+  }
 }
 
 .footer-page__social-list-item:not(:last-child) {

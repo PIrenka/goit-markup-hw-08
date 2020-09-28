@@ -4,6 +4,11 @@
   justify-content: center;
 }
 
+.our-team__social-list-item:not(:last-child) {
+  //   /* отступы между кружочками с иконками соц сетей */
+  margin-right: 10px;
+}
+
 .our-team__social-list-item-link {
   //   /* стили для создания пространства-кружочка под иконкой соц сети */
   width: 44px;
@@ -21,11 +26,6 @@
     //   /* цвет подложки-кружочка соц сетей при ховере */
     background-color: $active-color;
   }
-}
-
-.our-team__social-list-item:not(:last-child) {
-  //   /* отступы между кружочками с иконками соц сетей */
-  margin-right: 10px;
 }
 
 .our-team__social-list-item-icon {
