@@ -23,36 +23,44 @@
                 <span class="logo__web-logotext">Web</span><span class="logo__studio-logotext">Studio</span>
             </a>
 
-            <nav class="header-nav">
-                <ul class="list site-nav flexbox">
-                    <li class="site-nav__item">
-                        <a href="./index.html" class="link site-nav__link current">Студия</a>
+            <svg class=" header-page__menu-button-icon">
+                <use href="./images/icons/sprite.svg#menu-button-icon"></use>
+            </svg>
+
+            <div class="header__container-menu">
+
+                <nav class="header-nav">
+                    <ul class="list site-nav flexbox">
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="link site-nav__link current">Студия</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href=" ./portfolio.html" class="link site-nav__link"> <span>Портфолио</span> </a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="link site-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="list mail-tel-nav flexbox">
+                    <li class="mail-tel-nav__item">
+                        <a href="mailto:info@devstudio.com" class="link mail-tel-nav__link flexbox"
+                            aria-label="Написать письмо на">
+                            <svg class="mail-tel-nav__icon-mail">
+                                <use href="./images/icons/sprite.svg#mail"></use>
+                            </svg>info@devstudio.com</a>
                     </li>
-                    <li class="site-nav__item">
-                        <a href=" ./portfolio.html" class="link site-nav__link"> <span>Портфолио</span> </a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a href="./index.html" class="link site-nav__link">Контакты</a>
+                    <li class="mail-tel-nav__item">
+                        <a href="tel:+380991111111" class="link mail-tel-nav__link flexbox"
+                            aria-label="Позвонить по номеру">
+                            <svg class="mail-tel-nav__icon-tel">
+                                <use href="./images/icons/sprite.svg#tel"></use>
+                            </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>
 
-            <ul class="list mail-tel-nav flexbox">
-                <li class="mail-tel-nav__item">
-                    <a href="mailto:info@devstudio.com" class="link mail-tel-nav__link flexbox"
-                        aria-label="Написать письмо на">
-                        <svg class="mail-tel-nav__icon-mail">
-                            <use href="./images/icons/sprite.svg#mail"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="mail-tel-nav__item">
-                    <a href="tel:+380991111111" class="link mail-tel-nav__link flexbox"
-                        aria-label="Позвонить по номеру">
-                        <svg class="mail-tel-nav__icon-tel">
-                            <use href="./images/icons/sprite.svg#tel"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
+            </div>
 
         </div>
 
@@ -447,6 +455,7 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/js-form.js"></script>
 
 </body>
