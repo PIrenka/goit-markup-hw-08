@@ -1,6 +1,10 @@
 .whatwedo {
   display: none;
 
+  @include for-size(desktop) {
+    display: block;
+  }
+
   &__container {
     //   /* внутренние отступы для контейнера Чем Мы Занимаемся  */
     padding-bottom: 94px;
@@ -15,6 +19,10 @@
   }
 }
 
+.whatwedo__list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .whatwedo__list-item {
   //   /* отведенная ширина под фото из раздела */
   flex-basis: calc ((100 % - 2 * 30 px) / 3);
