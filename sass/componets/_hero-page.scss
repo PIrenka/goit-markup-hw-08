@@ -1,12 +1,12 @@
 .container-hero {
   //   /* стили для контейнера Героя с заголовком и кнопкой */
-  //   /* outline: 5px solid yellow; */
   // max-width: 1600px;
   // height: 600px;
   margin: 0px auto;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
     url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
@@ -15,7 +15,10 @@
 
   @include for-size(tablet-only) {
     width: 100%;
-    height: auto;
+    // width: 480px;
+
+    height: 400px;
+    //   height: auto;
     background-size: cover;
   }
 }
@@ -23,19 +26,26 @@
 .hero-page {
   //   /*  стили для секции Hero, особенно для фона Героя если не подгрузился файл CSS*/
   background: $hero-background-color;
-  //   /* outline: 5px solid orange; */
 
   &__title {
     //   /* стили для заголовка сайта в Hero */
     color: $title-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    // font-size: 44px;
+    // line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
     max-width: 650px;
+
+    @include for-size(mobile) {
+      // display: block;
+
+      font-size: 26px;
+      line-height: 1.62;
+      max-width: 360px;
+    }
     //   /* outline: 5px solid red; */
   }
 

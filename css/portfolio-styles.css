@@ -7,7 +7,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  outline: 2px solid green;
 }
 
 img {
@@ -30,6 +29,7 @@ main {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
@@ -127,20 +127,27 @@ main {
   }
 }
 
-.header-page__menu-button-icon {
+.header-page__menu-button-burger {
   width: 40px;
   height: 40px;
   fill: #000000;
   cursor: pointer;
+  position: relative;
+  right: 15px;
+  top: 10px;
 }
 
-.header-page__menu-button-icon:hover {
+.header-page__menu-button-burger:hover, .header-page__menu-button-burger:focus {
   fill: #2196f3;
 }
 
-.header-page .container {
-  display: flex;
-  justify-content: space-between;
+.header-nav {
+  margin-right: auto;
+}
+
+.header-page__menu-button {
+  position: relative;
+  z-index: 10;
 }
 
 .logo {
@@ -253,9 +260,8 @@ main {
 }
 
 .portfolio-page__list-button {
-  padding-top: 94px;
-  margin-bottom: 50px;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-page__list-button-item {
@@ -267,9 +273,14 @@ main {
   margin-right: 8px;
 }
 
+@media (max-width: 479px) {
+  .portfolio-page__list-button-item {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio-page__button {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
   text-align: center;
   background-color: #f5f4fa;

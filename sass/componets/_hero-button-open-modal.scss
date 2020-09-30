@@ -11,7 +11,7 @@
 
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  //   /* overflow: auto; */
+  overflow: auto; // чтоб можно было скролить и модальное окно если оно выше чем вьюпорт
 }
 
 .backdrop.is-hidden {
@@ -35,8 +35,14 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  min-width: 528px;
-  min-height: 581px;
+  // min-width: 528px;
+  // min-height: 581px;
+
+  @include for-size(mobile) {
+    min-width: 450px;
+    height: auto;
+  }
+
   padding: 40px;
 
   background: $title-color;

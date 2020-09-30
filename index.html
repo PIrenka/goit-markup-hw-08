@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- Верхняя линия -->
+
     <header class="header-page">
 
         <div class="container flexbox">
@@ -23,12 +23,14 @@
                 <span class="logo__web-logotext">Web</span><span class="logo__studio-logotext">Studio</span>
             </a>
 
-            <svg class=" header-page__menu-button-icon">
-                <use href="./images/icons/sprite.svg#menu-button-icon"></use>
-            </svg>
+            <button class="header-page__menu-button">
+                <svg class=" header-page__menu-button-burger">
+                    <use href="./images/icons/sprite.svg#menu-button-icon"></use>
+                </svg>
+            </button>
 
-            <div class="header__container-menu">
-
+            <div class="header__menu-container is-open">
+                <!-- <div class="menu" is-open> -->
                 <nav class="header-nav">
                     <ul class="list site-nav flexbox">
                         <li class="site-nav__item">
@@ -59,7 +61,7 @@
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-
+                <!-- </div> -->
             </div>
 
         </div>
@@ -67,7 +69,6 @@
     </header>
 
     <main>
-        <!-- Шапка сайта -->
         <section class="hero-page">
             <div class="container-hero flexbox">
 
@@ -141,12 +142,10 @@
             </div>
         </section>
 
-        <!-- ОСОБЕННОСТИ -->
         <section class=" features">
             <div class="container features__container">
                 <ul class="list flexbox features-list">
                     <li class="features-list__item features-list__item--feature-1">
-                        <!-- ОСОБЕННОСТИ Feature 1 -->
                         <h3 class="title features-list__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                         <p class="text features-list__text">
                             Идейные соображения, а также начало повседневной работы по
@@ -156,7 +155,6 @@
                     </li>
 
                     <li class="features-list__item features-list__item--feature-2">
-                        <!-- ОСОБЕННОСТИ Feature 2 -->
                         <h3 class="title features-list__title">ПУНКТУАЛЬНОСТЬ</h3>
                         <p class="text features-list__text">
                             Задача организации, в особенности же рамки и место обучения кадров
@@ -166,7 +164,6 @@
                     </li>
 
                     <li class="features-list__item features-list__item--feature-3">
-                        <!-- ОСОБЕННОСТИ Feature 3 -->
                         <h3 class="title features-list__title">ПЛАНИРОВАНИЕ</h3>
                         <p class="text features-list__text">
                             Равным образом консультация с широким активом в значительной степени
@@ -175,7 +172,6 @@
                     </li>
 
                     <li class="features-list__item features-list__item--feature-4">
-                        <!-- ОСОБЕННОСТИ Feature 4 -->
                         <h3 class="title features-list__title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                         <p class="text features-list__text">
                             Значимость этих проблем настолько очевидна, что реализация плановых
@@ -186,7 +182,6 @@
             </div>
         </section>
 
-        <!-- ЧЕМ МЫ ЗАНИМАЕМСЯ -->
         <section class="whatwedo">
             <div class="container whatwedo__container">
                 <h2 class="title whatwedo__title"> Чем мы занимаемся</h2>
@@ -207,7 +202,6 @@
             </div>
         </section>
 
-        <!-- НАША КОМАНДА -->
 
         <section class="our-team">
             <div class="container our-team__container">
@@ -329,7 +323,6 @@
             </div>
         </section>
 
-        <!-- ПОСТОЯННЫЕ КЛИЕНТЫ -->
 
         <section class="our-clients">
             <div class="container our-clients__container">
@@ -377,8 +370,7 @@
 
     </main>
 
-    <!-- Подвал -->
-    <footer class="footer-page">
+    <!-- <footer class="footer-page">
         <div class="container footer-page__container flexbox">
 
             <ul class="list footer-page__list-general-contacts">
@@ -446,13 +438,13 @@
                                 <use href="./images/icons/sprite.svg#footer-icon-send"> </use>
                             </svg> -->
 
-                        </button>
+    <!-- </button>
                     </form>
                 </li>
 
             </ul>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
