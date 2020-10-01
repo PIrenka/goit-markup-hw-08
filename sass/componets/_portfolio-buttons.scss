@@ -1,18 +1,28 @@
 .portfolio-page__list-button {
   //   /* отступы ряда кнопок от секции Проектов */
-  // padding-top: 94px;
-  // margin-bottom: 50px;
+  padding-top: 60px;
+  margin-bottom: 40px;
+
   display: flex;
   // justify-content: start;
   flex-wrap: wrap;
-  // justify-content: center;
+
+  @include for-size(tablet-desktop) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @include for-size(desktop) {
+    justify-content: center;
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-page__list-button-item {
   //   /* бордер для кнопок в верхнем ряду страници Портфолио */
   border-color: solid $team-container-background;
   border-radius: 4px;
-  // flex-basis: calc((100% - 8px * 2) / 3);
   //   /* border: none; */
 
   &:not(:last-child) {
@@ -20,20 +30,17 @@
     margin-right: 8px;
   }
 
-  @include for-size(mobile-only) {
-    // &:nth-child(-n + 2) {
-    margin-bottom: 15px;
-    // }
-    // &:nth-child(n + 4) {
-    //   margin-bottom: 40px;
-    // }
+  margin-bottom: 15px;
+
+  @include for-size(tablet) {
+    margin-bottom: 0;
   }
 }
 
 .portfolio-page__button {
   //   /* стили для ряда кнопок в Портфолио */
   font-weight: 500;
-  // font-size: 16px;
+  font-size: 16px;
   line-height: 1.62;
   text-align: center;
   background-color: $team-container-background;

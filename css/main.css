@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  padding-top: 81px;
+  padding-top: 60px;
 }
 
 .container {
@@ -848,7 +848,7 @@ main {
   cursor: pointer;
 }
 
-@media all and (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .our-clients__list-item {
     flex-basis: calc((100% - 30px * 2) / 3);
   }
