@@ -33,15 +33,15 @@
   //   justify-content: space-between;
   //   // overflow: hidden;
   // }
-  .hader-container {
-    position: relative;
-    width: 100%;
-  }
+  // & .hader-container {
+  //   position: relative;
+  //   width: 100%;
+  // }
 
-  .header-mobile {
-    display: flex;
-    justify-content: space-between;
-  }
+  // & .header-mobile {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
   .header-page__menu-button {
     border: none;
     background-color: transparent;
@@ -68,7 +68,14 @@
     z-index: 2;
   }
 }
-
+.hader-container {
+  position: relative;
+  width: 100%;
+}
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+}
 .header__menu-container {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -83,6 +90,7 @@
   // transform: translatey(60px);
   transform: translatey(0px);
   opacity: 0;
+  pointer-events: none;
   background-color: $title-color;
   // z-index: 5;
   transition: 0.5s ease-in-out;

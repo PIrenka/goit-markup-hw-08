@@ -125,16 +125,6 @@ main {
   }
 }
 
-.header-page .hader-container {
-  position: relative;
-  width: 100%;
-}
-
-.header-page .header-mobile {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header-page .header-page__menu-button {
   border: none;
   background-color: transparent;
@@ -161,6 +151,16 @@ main {
   fill: #2196f3;
 }
 
+.hader-container {
+  position: relative;
+  width: 100%;
+}
+
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__menu-container {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -173,6 +173,7 @@ main {
   width: 100%;
   transform: translatey(0px);
   opacity: 0;
+  pointer-events: none;
   background-color: #ffffff;
   transition: 0.5s ease-in-out;
 }
