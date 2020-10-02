@@ -17,19 +17,24 @@
 
     <header class="header-page">
 
-        <div class="container flexbox">
+        <div class="container hader-container flexbox">
 
-            <a href="./index.html" lang="en" class="link logo">
-                <span class="logo__web-logotext">Web</span><span class="logo__studio-logotext">Studio</span>
-            </a>
+            <div class="header-mobile">
+                <a href="./index.html" lang="en" class="link logo">
+                    <span class="logo__web-logotext">Web</span><span class="logo__studio-logotext">Studio</span>
+                </a>
 
-            <button class="header-page__menu-button">
-                <svg class=" header-page__menu-button-burger">
-                    <use href="./images/icons/sprite.svg#menu-button-icon"></use>
-                </svg>
-            </button>
+                <button type="button" class="header-page__menu-button" aria-controls="header__menu-container"
+                    data-menu-button>
+                    <svg class=" header-page__menu-button-icons" aria-label="Переключатель мобильного меню">
+                        <use class="header-page__menu-button-burger" href="./images/icons/sprite.svg#menu-button-icon">
+                        </use>
+                        <use class="header-page__menu-button-close" href="./images/icons/sprite.svg#close-modal"> </use>
+                    </svg>
+                </button>
+            </div>
 
-            <div class="header__menu-container is-open">
+            <div class="header__menu-container is-open" data-menu>
                 <!-- <div class="menu" is-open> -->
                 <nav class="header-nav">
                     <ul class="list site-nav flexbox">
@@ -446,8 +451,9 @@
         </div>
     </footer> -->
 
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+
     <script src="./js/js-form.js"></script>
 
 </body>

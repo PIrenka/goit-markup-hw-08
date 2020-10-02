@@ -1,12 +1,25 @@
 .mail-tel-nav {
-  display: none;
+  // display: none;
 
   //   /* стили к ссылкам правой части навигации хедера */
   font-weight: 500;
   letter-spacing: 0.02em;
+}
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+.mail-tel-nav__item:not(:last-child) {
+  margin-bottom: 16px;
+
+  @include for-size(tablet-desktop) {
+    & {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include for-size(desktop) {
+    & {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
   }
 }
 

@@ -1,23 +1,40 @@
 .header-nav {
-  display: none;
-
   //   /* жирность текста в навигации хедера */
   font-weight: 500;
-  margin-right: auto;
+  text-align: center;
+
+  @include for-size(tablet) {
+    margin-right: auto;
+    text-align: left;
+  }
 }
 
 .site-nav__item:not(:last-child) {
-  //   /* отступ справа кроме последнего ли в сайт-нав */
-  margin-right: 50px;
+  margin-bottom: 40px;
+
+  @include for-size(tablet) {
+    margin: 0;
+    & {
+      //   /* отступ справа кроме последнего ли в сайт-нав */
+      margin-right: 50px;
+    }
+  }
+}
+
+.site-nav__item:last-child {
+  margin-bottom: 60px;
 }
 
 .site-nav__link {
   //   /* сделать область наведения больше */
   //   /* padding: 20px 0; */
-  padding: 33px 0; // /*можно сделать больше паддинг, подгоняя исходя из высоты хедера, и тогда марджин в .link.current::after можно убрать*/
   //   /* цвет ссылок в левой навигации хедера */
   color: $minititles-color;
   position: relative;
+
+  @include for-size(tablet) {
+    padding: 33px 0; // /*можно сделать больше паддинг, подгоняя исходя из высоты хедера, и тогда марджин в .link.current::after можно убрать*/
+  }
 
   &:hover,
   &:focus,
@@ -27,6 +44,7 @@
     outline-color: $active-color;
   }
 }
+
 .site-nav__link.current {
   //   /* выделение ссылки в навигации хедера текуущей страници другим цветом */
   color: $active-color;
@@ -40,7 +58,12 @@
     height: 4px;
     width: 100%;
     border-radius: 2px;
-    //   /* margin-top: 29px; */
-    bottom: 0;
+    right: 0;
+    margin-top: 8px;
+
+    @include for-size(tablet) {
+      //   /* margin-top: 29px; */
+      bottom: 0;
+    }
   }
 }
