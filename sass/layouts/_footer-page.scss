@@ -1,0 +1,26 @@
+.footer-page {
+  //   /* общие стили для подвала сайта */
+  background-color: $hero-background-color;
+  line-height: 1.71;
+
+  &__container {
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__list-general-contacts {
+    margin-right: 85px;
+  }
+
+  &__logo {
+    //   /* отступы для Лого в футере */
+    margin-bottom: 20px;
+    //   /* outline: 6px solid yellow; */
+
+    &--studio-logotext {
+      //   /* стили для части Studio в логотипе в Футере сайта */
+      color: $title-color;
+    }
+  }
+}

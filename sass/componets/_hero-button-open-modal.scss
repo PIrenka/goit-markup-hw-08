@@ -11,7 +11,8 @@
 
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: auto; // чтоб можно было скролить и модальное окно если оно выше чем вьюпорт
+  // overflow: auto; // чтоб можно было скролить и модальное окно если оно выше чем вьюпорт
+  overflow: hidden;
 }
 
 .backdrop.is-hidden {
@@ -37,10 +38,14 @@
 
   // min-width: 528px;
   // min-height: 581px;
+  // overflow-y: scroll;
+  overflow: auto;
 
-  @include for-size(mobile) {
-    min-width: 450px;
-    height: auto;
+  @include for-size(tablet-only) {
+    // min-width: 450px;
+    top: 70%;
+    // height: auto;
+    // width: auto;
   }
 
   padding: 40px;
@@ -58,6 +63,10 @@
     transform: translate(500%, -50%) scale(2.1) rotate(-40deg);
     //   /* тут если убрать translate(-50%, -50%) получится тоже интересный эффект - с правого нижнего угла модалка поднимается и расширяется на центр */
   }
+
+  // body {
+  //   overflow: hidden;
+  // }
 
   &__button {
     //   /* стили для кнопки (крестик в кружочке) закрытия модального окна */

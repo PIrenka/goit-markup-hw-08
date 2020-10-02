@@ -4,13 +4,12 @@
   font-weight: 700;
   outline-color: $active-color;
 
-  @include for-size(desktop-only) {
-    display: inline-block;
-    font-size: 24px;
-    line-height: 1.17;
-    text-align: left;
-    vertical-align: text-top;
-  }
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: left;
+  vertical-align: text-top;
+
   @include for-size(desktop) {
     font-size: 26px;
     line-height: 1.19;
