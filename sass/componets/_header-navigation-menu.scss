@@ -4,25 +4,33 @@
   text-align: center;
 
   @include for-size(tablet) {
-    margin-right: auto;
+    // margin-right: auto;
     text-align: left;
+    // margin-right: auto;
   }
 }
 
-.site-nav__item:not(:last-child) {
-  margin-bottom: 40px;
-
-  @include for-size(tablet) {
-    margin: 0;
-    & {
-      //   /* отступ справа кроме последнего ли в сайт-нав */
-      margin-right: 50px;
-    }
+@include for-size(tablet-only) {
+  .site-nav__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .site-nav__item:last-child {
+    margin-bottom: 60px;
   }
 }
 
-.site-nav__item:last-child {
-  margin-bottom: 60px;
+@include for-size(tablet) {
+  .site-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  //   /* отступ справа кроме последнего ли в сайт-нав */
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .site-nav__item:last-child {
+    margin-right: 84px;
+  }
 }
 
 .site-nav__link {

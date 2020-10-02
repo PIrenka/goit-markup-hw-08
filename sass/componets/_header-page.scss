@@ -7,24 +7,6 @@
   //   /* нижняя линия внизу хедера */
   border-bottom: 1px solid $header-bottom-line;
 
-  & .logo {
-    // /* стили геометрии (отступов) для логотипа в целом */
-    // margin-top: 16px;
-    // margin-bottom: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    @include for-size(tablet-desktop) {
-      margin-top: 26px;
-      margin-bottom: 26px;
-    }
-    @include for-size(desktop) {
-      margin-top: 24px;
-      margin-bottom: 25px;
-      margin-right: 93px;
-    }
-  }
-
   &__menu-button {
     display: inline-block;
     margin: 0;
@@ -63,32 +45,45 @@
     }
   }
 }
+
 .header-container {
   display: flex;
   justify-content: space-between;
+
+  @include for-size(tablet) {
+    align-items: baseline;
+  }
 }
 
-.header__menu-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@include for-size(tablet-only) {
+  .header__menu-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  // top: 0;
-  right: 0;
-  width: 100%;
-  transform: translatey(-100%);
-  opacity: 0;
-  background-color: $title-color;
-  transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    // top: 0;
+    right: 0;
+    width: 100%;
+    transform: translatey(-100%);
+    opacity: 0;
+    background-color: $title-color;
+    transition: 0.5s ease-in-out;
 
-  &.is-open {
-    opacity: 1;
-    transform: translatey(60.5px);
+    &.is-open {
+      opacity: 1;
+      transform: translatey(60.5px);
+    }
+  }
+}
+
+@include for-size(tablet) {
+  .header__menu-container {
+    display: flex;
   }
 }
