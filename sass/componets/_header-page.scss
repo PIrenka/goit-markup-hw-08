@@ -14,8 +14,10 @@
 
   & .logo {
     // /* стили геометрии (отступов) для логотипа в целом */
-    margin-top: 16px;
-    margin-bottom: 16px;
+    // margin-top: 16px;
+    // margin-bottom: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     @include for-size(tablet-desktop) {
       margin-top: 26px;
@@ -28,24 +30,24 @@
     }
   }
 
-  // & .container {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   // overflow: hidden;
-  // }
-  // & .hader-container {
-  //   position: relative;
-  //   width: 100%;
-  // }
-
-  // & .header-mobile {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-  .header-page__menu-button {
+  &__menu-button {
     border: none;
     background-color: transparent;
+
+    & .header-page__menu-button-close {
+      display: none;
+    }
+
+    &.is-open {
+      & .header-page__menu-button-close {
+        display: block;
+      }
+      & .header-page__menu-button-burger {
+        display: none;
+      }
+    }
   }
+
   &__menu-button-icons {
     width: 40px;
     height: 40px;
@@ -54,28 +56,32 @@
 
     position: absolute;
     right: 15px;
+    // right: 0px;
     top: 10px;
-
-    @include for-size(tablet) {
-      display: none;
-    }
 
     &:hover,
     &:focus {
       fill: $active-color;
     }
 
-    z-index: 2;
+    @include for-size(tablet) {
+      display: none;
+    }
   }
 }
-.hader-container {
+.header-container {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   width: 100%;
 }
-.header-mobile {
-  display: flex;
-  justify-content: space-between;
-}
+// .header-mobile {
+//   display: flex;
+//   justify-content: space-between;
+//   position: relative;
+//   width: 100%;
+// }
+
 .header__menu-container {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -88,20 +94,21 @@
   right: 0;
   width: 100%;
   // transform: translatey(60px);
-  transform: translatey(0px);
+  transform: translatey(-100%);
   opacity: 0;
-  pointer-events: none;
+  // pointer-events: none;
   background-color: $title-color;
   // z-index: 5;
   transition: 0.5s ease-in-out;
 
+  // visibility: hidden;
+  // opacity: 0;
+
   &.is-open {
     opacity: 1;
     transform: translatey(61px);
-
-    .header-page__menu-button-burger {
-      opacity: 0;
-      visibility: hidden;
+    // visibility: visible;
+    .container {
       pointer-events: none;
     }
   }
