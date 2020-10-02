@@ -38,11 +38,14 @@
     width: 100%;
   }
 
-  // .header-mobile {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-page__menu-button {
+    border: none;
+    background-color: transparent;
+  }
   &__menu-button-icons {
     width: 40px;
     height: 40px;
@@ -98,8 +101,3 @@
 // ===============================
 // ===============================
 // ===============================
-
-.header-page__menu-button {
-  border: none;
-  background-color: transparent;
-}

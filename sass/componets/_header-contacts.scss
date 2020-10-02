@@ -1,6 +1,7 @@
 .mail-tel-nav {
-  // display: none;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   //   /* стили к ссылкам правой части навигации хедера */
   font-weight: 500;
   letter-spacing: 0.02em;

@@ -24,12 +24,15 @@
                     <span class="logo__web-logotext">Web</span><span class="logo__studio-logotext">Studio</span>
                 </a>
 
-                <button type="button" class="header-page__menu-button" aria-controls="header__menu-container"
-                    data-menu-button>
+                <button type="button" class="header-page__menu-button" aria-expanded="false"
+                    aria-controls="header__menu-container" data-menu-button>
                     <svg class=" header-page__menu-button-icons" aria-label="Переключатель мобильного меню">
-                        <use class="header-page__menu-button-burger" href="./images/icons/sprite.svg#menu-button-icon">
+                        <use class="header-page__menu-button-burger" href="./images/icons/sprite.svg#menu-button-icon"
+                            true>
                         </use>
-                        <use class="header-page__menu-button-close" href="./images/icons/sprite.svg#close-modal"> </use>
+                        <use class="header-page__menu-button-close" href="./images/icons/sprite.svg#menu-button-close"
+                            false>
+                        </use>
                     </svg>
                 </button>
             </div>
