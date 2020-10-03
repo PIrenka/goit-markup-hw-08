@@ -9,6 +9,21 @@
   &--mailtel {
     //   /* стили для номера телефона в футере */
     color: $tel-in-footer-color;
-    margin-top: 9px;
+  }
+
+  @include for-size(desktop-only) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-page__list-general-contacts-item:not(:last-child) {
+  @include for-size(desktop-only) {
+    margin-bottom: 8px;
+  }
+
+  &:not(:last-child) {
+    @include for-size(desktop) {
+      margin-bottom: 9px;
+    }
   }
 }

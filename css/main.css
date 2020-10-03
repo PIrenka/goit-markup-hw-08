@@ -1113,20 +1113,15 @@ main {
 }
 
 .footer-page__container {
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-page__list-general-contacts {
-  margin-right: 85px;
+  padding: 60px 15px;
+  text-align: center;
 }
 
 .footer-page__logo {
   margin-bottom: 20px;
 }
 
-.footer-page__logo--studio-logotext {
+.footer-page__logo .logo__studio-logotext {
   color: #ffffff;
 }
 
@@ -1138,11 +1133,28 @@ main {
 
 .footer-page__list-general-contacts--mailtel {
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 9px;
+}
+
+@media (max-width: 1199px) {
+  .footer-page__list-general-contacts {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer-page__list-general-contacts-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-page__list-general-contacts-item:not(:last-child):not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-page__list-join-to-us {
-  margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .footer-page__list-join-to-us--text {
@@ -1153,11 +1165,17 @@ main {
   margin-bottom: 20px;
 }
 
+.footer-page__social-list {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-page__social-list-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .footer-page__social-list-link {
+  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1171,7 +1189,7 @@ main {
   background-color: #2196f3;
 }
 
-.footer-page__social-list-icon--instagram, .footer-page__social-list-icon--twitter, .footer-page__social-list-icon--facebook, .footer-page__social-list-icon--linkedin {
+.footer-page .footer-page__social-list-icon--instagram, .footer-page .footer-page__social-list-icon--twitter, .footer-page .footer-page__social-list-icon--facebook, .footer-page .footer-page__social-list-icon--linkedin {
   width: 20px;
   height: 20px;
   fill: #ffffff;
@@ -1194,9 +1212,8 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 12px;
-  padding: 15px 16px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   outline-color: #2196f3;
   color: #ffffff;
 }
@@ -1219,9 +1236,8 @@ main {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 

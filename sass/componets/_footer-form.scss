@@ -16,11 +16,12 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 12px;
+  // margin-right: 12px;
+  margin-bottom: 20px;
 
-  padding: 15px 16px;
+  // padding: 15px 16px;
 
-  width: 358px;
+  width: 100%;
   outline-color: $active-color;
 
   color: $title-color;
@@ -48,9 +49,9 @@
   font-size: 16px;
   line-height: 1.87;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  text-align: center;
+  // text-align: center;
   letter-spacing: 0.06em;
 
   &::after {

@@ -1,5 +1,6 @@
 .footer-page__list-join-to-us {
-  margin-right: 93px;
+  // margin-right: 93px;
+  margin-bottom: 60px;
 
   &--text {
     //   /* стили для текста-контейнера */
@@ -12,38 +13,46 @@
   }
 }
 
-.footer-page__social-list-item:not(:last-child) {
-  //   /* отступы между кружечками сойсетей */
-  margin-right: 10px;
-}
-
-.footer-page__social-list-link {
-  //   /* стили для кружечков под иконками соц сетей */
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  box-shadow: none;
-  //   /* скрыть тени от круглых иконок */
-  background-color: $footer-eclipse-social-icons-color;
-  padding: 12px;
-  //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    //   /* смена заливки кружочка при ховере */
-    background-color: $active-color;
+.footer-page {
+  &__social-list {
+    display: flex;
+    justify-content: center;
   }
-}
+  &__social-list-item:not(:last-child) {
+    //   /* отступы между кружечками сойсетей */
+    margin-right: 10px;
+  }
 
-.footer-page__social-list-icon {
-  &--instagram,
-  &--twitter,
-  &--facebook,
-  &--linkedin {
-    //   /* размеры и заливка иконок соц сетей */
-    width: 20px;
-    height: 20px;
-    fill: $title-color;
+  &__social-list-link {
+    //   /* стили для кружечков под иконками соц сетей */
+    display: block;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    box-shadow: none;
+    //   /* скрыть тени от круглых иконок */
+    background-color: $footer-eclipse-social-icons-color;
+    padding: 12px;
+    //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      //   /* смена заливки кружочка при ховере */
+      background-color: $active-color;
+    }
+  }
+
+  .footer-page__social-list-icon {
+    &--instagram,
+    &--twitter,
+    &--facebook,
+    &--linkedin {
+      //   /* размеры и заливка иконок соц сетей */
+      width: 20px;
+      height: 20px;
+      fill: $title-color;
+    }
   }
 }
