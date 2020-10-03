@@ -9,6 +9,10 @@
 
   padding: 10px 0px;
 
+  @include for-size(tablet) {
+    padding: 21px 0;
+  }
+
   &__menu-button {
     display: inline-block;
     margin: 0;
@@ -58,7 +62,7 @@
   align-items: center;
 
   @include for-size(tablet) {
-    align-items: baseline;
+    align-items: center;
   }
 }
 

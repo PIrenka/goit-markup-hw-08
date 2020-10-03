@@ -28,10 +28,22 @@
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
   }
-  .site-nav__item:last-child {
+}
+
+.site-nav__item:last-child {
+  @include for-size(tablet-desktop) {
     margin-right: 84px;
   }
+  @include for-size(desktop) {
+    margin-right: auto;
+  }
 }
+
+// @include for-size(desktop) {
+//   .site-nav__item:last-child {
+//     // margin-right: auto;
+//   }
+// }
 
 .site-nav__link {
   //   /* сделать область наведения больше */
@@ -72,8 +84,58 @@
       margin-top: 8px;
     }
     @include for-size(tablet) {
-      margin-top: 20px;
+      margin-top: 31px;
+      // bottom: 0;
+    }
+    @include for-size(desktop) {
+      margin-top: 30px;
       // bottom: 0;
     }
   }
 }
+
+// // ===================================================
+// .header-nav {
+//   //   /* жирность текста в навигации хедера */
+//   font-weight: 500;
+//   margin-right: auto;
+// }
+
+// .site-nav__item:not(:last-child) {
+//   //   /* отступ справа кроме последнего ли в сайт-нав */
+//   margin-right: 50px;
+// }
+
+// .site-nav__link {
+//   //   /* сделать область наведения больше */
+//   //   /* padding: 20px 0; */
+//   padding: 33px 0; // /*можно сделать больше паддинг, подгоняя исходя из высоты хедера, и тогда марджин в .link.current::after можно убрать*/
+//   //   /* цвет ссылок в левой навигации хедера */
+//   color: $minititles-color;
+//   position: relative;
+
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     //   /* возможность выделять другим цветом ссылки при наведении курсора на них */
+//     color: $active-color;
+//     outline-color: $active-color;
+//   }
+// }
+// .site-nav__link.current {
+//   //   /* выделение ссылки в навигации хедера текуущей страници другим цветом */
+//   color: $active-color;
+
+//   &::after {
+//     //   /* "подчеркивание" активной страницы в Хедере */
+//     position: absolute;
+//     content: "";
+//     display: block;
+//     background-color: $active-color;
+//     height: 4px;
+//     width: 100%;
+//     border-radius: 2px;
+//     //   /* margin-top: 29px; */
+//     bottom: 0;
+//   }
+// }

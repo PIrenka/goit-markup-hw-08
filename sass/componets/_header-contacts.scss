@@ -5,6 +5,7 @@
   //   /* стили к ссылкам правой части навигации хедера */
   font-weight: 500;
   letter-spacing: 0.02em;
+  line-height: 1.17;
 
   @include for-size(tablet-desktop) {
     font-size: 12px;
@@ -39,6 +40,11 @@
   height: 12px;
   fill: $inside-color;
   margin-right: 10px;
+
+  @include for-size(tablet-desktop) {
+    margin-right: 8px;
+  }
+
   //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -65,6 +71,9 @@
 }
 
 .mail-tel-nav__link {
+  display: flex;
+  align-items: center;
+
   &:hover,
   &:focus {
     //   /* возможность выделять другим цветом ссылки при наведении курсора на них */
