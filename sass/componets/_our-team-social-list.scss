@@ -1,7 +1,12 @@
 .our-team__social-list {
   //   /* отступ и расположение списка соц сетей под в карточке члена команды */
-  padding-bottom: 30px;
+  display: flex;
   justify-content: center;
+  padding-bottom: 24px;
+
+  @include for-size(desktop) {
+    padding-bottom: 30px;
+  }
 }
 
 .our-team__social-list-item:not(:last-child) {
@@ -34,7 +39,6 @@
   &--facebook,
   &--linkedin {
     //   /* заливка и размеры иконок соц сетей */
-    //   /* background-color: green; */
     width: 20px;
     height: 20px;
     fill: $team-social-icons-fill;

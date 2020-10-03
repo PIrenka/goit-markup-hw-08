@@ -887,8 +887,15 @@ main {
 }
 
 .our-team__social-list {
-  padding-bottom: 30px;
+  display: flex;
   justify-content: center;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 1200px) {
+  .our-team__social-list {
+    padding-bottom: 30px;
+  }
 }
 
 .our-team__social-list-item:not(:last-child) {
