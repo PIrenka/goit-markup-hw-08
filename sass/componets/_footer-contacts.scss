@@ -14,6 +14,9 @@
   @include for-size(desktop-only) {
     margin-bottom: 60px;
   }
+  @include for-size(desktop) {
+    margin-right: 82px;
+  }
 }
 
 .footer-page__list-general-contacts-item-logo {

@@ -1,7 +1,12 @@
 .footer-page {
   &__list-join-to-us {
-    // margin-right: 93px;
-    margin-bottom: 60px;
+    @include for-size(tablet-only) {
+      margin-bottom: 60px;
+    }
+    @include for-size(desktop) {
+      margin-bottom: 23px;
+      margin-right: 93px;
+    }
   }
 
   &__list-join-to-us-item:not(:last-child) {
