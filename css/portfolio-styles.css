@@ -255,6 +255,13 @@ main {
   }
 }
 
+@media (min-width: 1200px) {
+  .site-nav {
+    margin-right: 305px;
+    margin-left: -40px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .site-nav__item:last-child {
     margin-right: 84px;

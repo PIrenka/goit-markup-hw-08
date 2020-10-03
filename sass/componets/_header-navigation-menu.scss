@@ -30,6 +30,13 @@
   }
 }
 
+@include for-size(desktop) {
+  .site-nav {
+    margin-right: 305px;
+    margin-left: -40px;
+  }
+}
+
 .site-nav__item:last-child {
   @include for-size(tablet-desktop) {
     margin-right: 84px;
