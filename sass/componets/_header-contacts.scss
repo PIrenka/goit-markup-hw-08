@@ -5,6 +5,15 @@
   //   /* стили к ссылкам правой части навигации хедера */
   font-weight: 500;
   letter-spacing: 0.02em;
+
+  @include for-size(tablet-desktop) {
+    font-size: 12px;
+    align-items: normal;
+  }
+
+  @include for-size(desktop) {
+    flex-direction: row;
+  }
 }
 
 .mail-tel-nav__item:not(:last-child) {
@@ -40,7 +49,8 @@
 }
 
 .mail-tel-nav__icon-tel {
-  //   /* стили для иконки телефона */
+  // display: flex;
+  // align-items: center; //   /* стили для иконки телефона */
   width: 10px;
   height: 16px;
   fill: $inside-color;

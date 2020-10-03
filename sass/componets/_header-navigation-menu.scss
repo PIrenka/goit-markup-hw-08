@@ -40,9 +40,9 @@
   color: $minititles-color;
   position: relative;
 
-  @include for-size(tablet) {
-    padding: 33px 0; // /*можно сделать больше паддинг, подгоняя исходя из высоты хедера, и тогда марджин в .link.current::after можно убрать*/
-  }
+  // @include for-size(tablet) {
+  //   padding: 33px 0; // /*можно сделать больше паддинг, подгоняя исходя из высоты хедера, и тогда марджин в .link.current::after можно убрать*/
+  // }
 
   &:hover,
   &:focus,
@@ -67,11 +67,13 @@
     width: 100%;
     border-radius: 2px;
     right: 0;
-    margin-top: 8px;
 
+    @include for-size(tablet-only) {
+      margin-top: 8px;
+    }
     @include for-size(tablet) {
-      //   /* margin-top: 29px; */
-      bottom: 0;
+      margin-top: 20px;
+      // bottom: 0;
     }
   }
 }
