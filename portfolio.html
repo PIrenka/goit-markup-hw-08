@@ -15,20 +15,25 @@
 
 <body>
 
-    <!-- Верхняя линия -->
     <header class="header-page">
 
-        <div class="container flexbox">
+        <div class="container header-container flexbox">
 
             <a href="./index.html" lang="en" class="link logo">
                 <span class="logo__web-logotext">Web</span><span class="logo__studio-logotext">Studio</span>
             </a>
 
-            <!-- <svg class="header-page__menu-button-icon">
-                <use href="./images/icons/sprite.svg#menu-button-icon"></use>
-            </svg> -->
+            <button type="button" class="header-page__menu-button" aria-expanded="false"
+                aria-controls="header__menu-container" data-menu-button>
+                <svg class=" header-page__menu-button-icons" aria-label="Переключатель мобильного меню">
+                    <use class="header-page__menu-button-burger" href="./images/icons/sprite.svg#menu-button-icon">
+                    </use>
+                    <use class="header-page__menu-button-close" href="./images/icons/sprite.svg#menu-button-close">
+                    </use>
+                </svg>
+            </button>
 
-            <div class="header__container-menu">
+            <div class="header__menu-container" id="header__menu-container" data-menu>
                 <nav class="header-nav">
                     <ul class="list site-nav flexbox">
                         <li class="site-nav__item">
@@ -95,11 +100,25 @@
                 </ul>
 
                 <ul class="list portfolio-page__projects-list flexbox">
-                    <!-- <h2>Сетка с пректами</h2> -->
                     <li class="portfolio-page__projects-list-item"> <a href="/"
                             class="link portfolio-page__projects-list-link" title="сайт Технокряка">
                             <div class="portfolio-page__projects-list-overlay-container">
-                                <img src="./images/project-1.jpg" alt="">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/project-1.webp 1x, ./images/desktop/project-1-2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project-1.jpg 1x, ./images/desktop/project-1-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project-1.jpg 1x, ./images/tablet/project-1-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/project-1.jpg 1x, ./images/mobile/project-1-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/mobile/project-1.jpg" alt="Фото веб-сайта Технокряк" />
+                                </picture>
                                 <p class="text portfolio-page__projects-list-overlay-text">Технокряк это современная
                                     площадка распространения коронавируса.
                                     Компании
@@ -116,7 +135,23 @@
                     <li class="portfolio-page__projects-list-item"> <a href="/"
                             class="link portfolio-page__projects-list-link">
                             <div class="portfolio-page__projects-list-overlay-container">
-                                <img src="./images/project-2.jpg" alt="">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/project-2.webp 1x, ./images/desktop/project-2-2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project-2.jpg 1x, ./images/desktop/project-2-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project-2.jpg 1x, ./images/tablet/project-2-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/project-2.jpg 1x, ./images/mobile/project-2-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/mobile/project-2.jpg" alt="Фото дизайна Постера New Orlean vs Golden
+                                    Star" />
+                                </picture>
                                 <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
@@ -131,7 +166,23 @@
                     <li class="portfolio-page__projects-list-item"> <a href="/"
                             class="link portfolio-page__projects-list-link">
                             <div class="portfolio-page__projects-list-overlay-container">
-                                <img src="./images/project-3.jpg" alt="">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/project-3.webp 1x, ./images/desktop/project-3-2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project-3.jpg 1x, ./images/desktop/project-3-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project-3.jpg 1x, ./images/tablet/project-3-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/project-3.jpg 1x, ./images/mobile/project-3-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/mobile/project-3.jpg"
+                                        alt="Фото приложения постера Ресторана Seafood" />
+                                </picture>
                                 <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
@@ -145,7 +196,22 @@
                     <li class="portfolio-page__projects-list-item"> <a href="/"
                             class="link portfolio-page__projects-list-link">
                             <div class="portfolio-page__projects-list-overlay-container">
-                                <img src="./images/project-4.jpg" alt="">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/project-4.webp 1x, ./images/desktop/project-4-2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project-4.jpg 1x, ./images/desktop/project-4-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project-4.jpg 1x, ./images/tablet/project-4-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/project-4.jpg 1x, ./images/mobile/project-4-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/mobile/project-4.jpg" alt="Фото маркетинга Проекта Prime" />
+                                </picture>
                                 <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
@@ -159,7 +225,22 @@
                     <li class="portfolio-page__projects-list-item"> <a href="/"
                             class="link portfolio-page__projects-list-link">
                             <div class="portfolio-page__projects-list-overlay-container">
-                                <img src="./images/project-5.jpg" alt="">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/project-5.webp 1x, ./images/desktop/project-5-2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project-5.jpg 1x, ./images/desktop/project-5-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project-5.jpg 1x, ./images/tablet/project-5-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/project-5.jpg 1x, ./images/mobile/project-5-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/mobile/project-5.jpg" alt="Фото приложения Проекта Boxes" />
+                                </picture>
                                 <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
@@ -173,8 +254,24 @@
                     <li class="portfolio-page__projects-list-item"> <a href="/"
                             class="link portfolio-page__projects-list-link">
                             <div class="portfolio-page__projects-list-overlay-container">
-                                <img src="./images/project-6.jpg" alt="">
-                                <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/project-6.webp 1x, ./images/desktop/project-6-2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project-6.jpg 1x, ./images/desktop/project-6-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project-6.jpg 1x, ./images/tablet/project-6-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/project-6.jpg 1x, ./images/mobile/project-6-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/mobile/project-6.jpg"
+                                        alt="Фото веб-сайта Inspiration has no Borders" />
+                                </picture>
+                                <p class=" text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
 
@@ -188,7 +285,23 @@
                     <li class="portfolio-page__projects-list-item"> <a href="/"
                             class="link portfolio-page__projects-list-link">
                             <div class="portfolio-page__projects-list-overlay-container">
-                                <img src="./images/project-7.jpg" alt="">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/project-7.webp 1x, ./images/desktop/project-7-2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project-7.jpg 1x, ./images/desktop/project-7-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project-7.jpg 1x, ./images/tablet/project-7-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/project-7.jpg 1x, ./images/mobile/project-7-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/mobile/project-7.jpg"
+                                        alt="Фото дизайна постера Издания Limited Edition" />
+                                </picture>
                                 <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
@@ -202,7 +315,22 @@
                     <li class="portfolio-page__projects-list-item"> <a href="/"
                             class="link portfolio-page__projects-list-link">
                             <div class="portfolio-page__projects-list-overlay-container">
-                                <img src="./images/project-8.jpg" alt="">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/project-8.webp 1x, ./images/desktop/project-8-2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project-8.jpg 1x, ./images/desktop/project-8-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project-8.jpg 1x, ./images/tablet/project-8-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/project-8.jpg 1x, ./images/mobile/project-8-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/mobile/project-8.jpg" alt="Фото маркетинга Проекта LAB" />
+                                </picture>
                                 <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
@@ -216,7 +344,22 @@
                     <li class="portfolio-page__projects-list-item"> <a href="/"
                             class="link portfolio-page__projects-list-link">
                             <div class="portfolio-page__projects-list-overlay-container">
-                                <img src="./images/project-9.jpg" alt="">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/project-9.webp 1x, ./images/desktop/project-9-2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project-9.jpg 1x, ./images/desktop/project-9-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project-9.jpg 1x, ./images/tablet/project-9-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/project-9.jpg 1x, ./images/mobile/project-9-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/mobile/project-9.jpg" alt="Фото приложения Growing Business" />
+                                </picture>
                                 <p class="text portfolio-page__projects-list-overlay-text">Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.</p>
                             </div>
