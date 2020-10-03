@@ -16,6 +16,10 @@
   }
 }
 
+.footer-page__list-general-contacts-item-logo {
+  margin-bottom: 20px;
+}
+
 .footer-page__list-general-contacts-item:not(:last-child) {
   @include for-size(desktop-only) {
     margin-bottom: 8px;

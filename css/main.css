@@ -1114,15 +1114,26 @@ main {
 
 .footer-page__container {
   padding: 60px 15px;
-  text-align: center;
 }
 
-.footer-page__logo {
-  margin-bottom: 20px;
+@media (max-width: 1199px) {
+  .footer-page__container {
+    text-align: center;
+  }
 }
 
 .footer-page__logo .logo__studio-logotext {
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .footer-page__container-tablet {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 61px;
+    padding-right: 74px;
+  }
 }
 
 .footer-page__list-general-contacts--address {
@@ -1141,6 +1152,10 @@ main {
   }
 }
 
+.footer-page__list-general-contacts-item-logo {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1199px) {
   .footer-page__list-general-contacts-item:not(:last-child) {
     margin-bottom: 8px;
@@ -1157,12 +1172,15 @@ main {
   margin-bottom: 60px;
 }
 
+.footer-page__list-join-to-us-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .footer-page__list-join-to-us--text {
   color: #ffffff;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .footer-page__social-list {
@@ -1206,6 +1224,14 @@ main {
   margin-bottom: 20px;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .footer-form__field {
   background-color: transparent;
   height: 50px;
@@ -1213,9 +1239,26 @@ main {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-bottom: 20px;
-  width: 100%;
   outline-color: #2196f3;
   color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .footer-form__field {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-form__field {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-form__field {
+    width: 358px;
+  }
 }
 
 .footer-form__field::placeholder {

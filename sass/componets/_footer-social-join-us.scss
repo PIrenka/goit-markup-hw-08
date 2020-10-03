@@ -1,14 +1,19 @@
-.footer-page__list-join-to-us {
-  // margin-right: 93px;
-  margin-bottom: 60px;
+.footer-page {
+  &__list-join-to-us {
+    // margin-right: 93px;
+    margin-bottom: 60px;
+  }
 
-  &--text {
+  &__list-join-to-us-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__list-join-to-us--text {
     //   /* стили для текста-контейнера */
     color: $title-color;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-bottom: 20px;
     //   /* padding-top: 12px; тут костыль так как ранее задавала падинги для ул в футере:60пх */
   }
 }

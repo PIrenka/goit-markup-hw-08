@@ -3,18 +3,41 @@
   background-color: $hero-background-color;
   line-height: 1.71;
 
+  // @include for-size(desktop-only) {
+  //   text-align: center;
+  // }
+
   &__container {
     padding: 60px 15px;
-    text-align: center;
+    @include for-size(desktop-only) {
+      text-align: center;
+    }
   }
 
   &__logo {
-    //   /* отступы для Лого в футере */
-    margin-bottom: 20px;
-
     & .logo__studio-logotext {
       //   /* стили для части Studio в логотипе в Футере сайта */
       color: $title-color;
+    }
+  }
+
+  // &__container-tablet{
+  //   @include for-size(tablet) {
+  //     display: flex;
+  //     justify-content: space-around;
+  //   }
+  // }
+}
+
+@include for-size(tablet) {
+  .footer-page {
+    &__container-tablet {
+      // flex-direction: row;
+      display: flex;
+      justify-content: space-around;
+      justify-content: space-between;
+      padding-left: 61px;
+      padding-right: 74px;
     }
   }
 }
