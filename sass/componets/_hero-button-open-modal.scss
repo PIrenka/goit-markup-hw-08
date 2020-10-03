@@ -32,21 +32,29 @@
 .modal {
   //   /* стили для модального окна */
   position: absolute;
-  top: 50%;
+  // top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  overflow-y: scroll;
+  // @include for-size(tablet-only) {
+  //   // overflow-y: scroll;
+
+  //   top: 100%;
+  // }
+  // @include for-size(tablet-desktop) {
+  //   top: 100%;
+  // }
 
   // min-width: 528px;
   // min-height: 581px;
   // overflow-y: scroll;
-  overflow: auto;
 
-  @include for-size(tablet-only) {
-    // min-width: 450px;
-    top: 70%;
-    // height: auto;
-    // width: auto;
-  }
+  // @include for-size(tablet-only) {
+  //   // min-width: 450px;
+  //   top: 70%;
+  //   // height: auto;
+  //   // width: auto;
+  // }
 
   padding: 40px;
 
