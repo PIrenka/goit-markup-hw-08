@@ -37,13 +37,14 @@ body {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
-
 }
 
 main {
   //   /* если зафиксировать Хедер, стоит учесть верхний отступ в main в размере высоты самого Хедера, тогда не съедет контент вверх под Хедер */
-  padding-top: 60px; //????это вроде для мобилки и таблет
-  // padding-top: 81px;
+  padding-top: 61px;
+  @include for-size(tablet) {
+    padding-top: 81px;
+  }
 }
 
 .container {

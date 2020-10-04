@@ -1,52 +1,105 @@
-.container-hero {
-  //   /* стили для контейнера Героя с заголовком и кнопкой */
-  // max-width: 1600px;
-  // height: 600px;
+.hero-page {
+  //   /*  стили для секции Hero, особенно для фона Героя если не подгрузился файл CSS*/
+  background: $hero-background-color;
+
   margin: 0px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  // ----------------------------------------
   background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
-    url("../images/hero-bg.jpg");
+    url("../images/mobile/hero.jpg");
+  height: 400px;
+  // background-size: 480px 400px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
+  // background-color: red;
 
-  @include for-size(tablet-only) {
-    width: 100%;
-    // width: 480px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
+      url(../images/mobile/hero-2x.jpg);
+    // background-color: orange;
+  }
+  // ----------------------------------------
+  @include for-size(tablet) {
+    background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
+      url(../images/tablet/hero.jpg);
+    // background-color: blue;
 
-    height: 400px;
-    //   height: auto;
-    background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $hero-overlay-color,
+          $hero-overlay-color
+        ),
+        url(../images/tablet/hero-2x.jpg);
+      // background-color: blueviolet;
+    }
+  }
+  // ----------------------------------------
+  @include for-size(desktop) {
+    height: 600px;
+    background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
+      url(../images/desktop/hero.jpg);
+    // background-color: green;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $hero-overlay-color,
+          $hero-overlay-color
+        ),
+        url(../images/desktop/hero-2x.jpg);
+      // background-color: goldenrod;
+    }
+  }
+}
+// ----------------------------------------
+// ----------------------------------------
+.container-hero {
+  //   /* стили для контейнера Героя с заголовком и кнопкой */
+  text-align: center;
+
+  padding: 118px 60px;
+  @include for-size(tablet) {
+    padding: 118px 204px;
+  }
+  @include for-size(desktop) {
+    padding: 200px 452px;
   }
 }
 
 .hero-page {
-  //   /*  стили для секции Hero, особенно для фона Героя если не подгрузился файл CSS*/
-  background: $hero-background-color;
-
   &__title {
     //   /* стили для заголовка сайта в Hero */
     color: $title-color;
     font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
-    max-width: 650px;
+    max-width: 360px;
 
-    @include for-size(mobile) {
-      // display: block;
-
-      font-size: 26px;
-      line-height: 1.62;
-      max-width: 360px;
+    @include for-size(desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
     }
-    //   /* outline: 5px solid red; */
   }
 
   &__button {
@@ -57,7 +110,6 @@
     line-height: 1.87;
     background-color: $active-color;
     letter-spacing: 0.06em;
-    //   /* outline: 2px solid orange; */
 
     padding: 10px 32px;
     border: none;

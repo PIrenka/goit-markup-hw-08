@@ -25,7 +25,13 @@ body {
 }
 
 main {
-  padding-top: 60px;
+  padding-top: 61px;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-top: 81px;
+  }
 }
 
 .container {
