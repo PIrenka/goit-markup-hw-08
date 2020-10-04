@@ -73,13 +73,13 @@
   //   /* стили для контейнера Героя с заголовком и кнопкой */
   text-align: center;
 
-  padding: 118px 60px;
-  @include for-size(tablet) {
-    padding: 118px 204px;
-  }
-  @include for-size(desktop) {
-    padding: 200px 252px;
-  }
+  // padding: 118px 60px;
+  // @include for-size(tablet) {
+  //   padding: 118px 204px;
+  // }
+  // @include for-size(desktop) {
+  //   padding: 200px 252px;
+  // }
 }
 
 .hero-page {

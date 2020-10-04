@@ -451,19 +451,6 @@ main {
 
 .container-hero {
   text-align: center;
-  padding: 118px 60px;
-}
-
-@media (min-width: 768px) {
-  .container-hero {
-    padding: 118px 204px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container-hero {
-    padding: 200px 252px;
-  }
 }
 
 .hero-page__title {
