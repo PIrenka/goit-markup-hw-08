@@ -2,19 +2,25 @@
   &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+
+    line-height: 1.5;
     text-align: center;
     margin: 0;
     margin-bottom: 12px;
+
+    @include for-size(desktop) {
+      line-height: 1.15;
+    }
   }
   &__label-titles {
+    text-align: start;
     margin-bottom: 4px;
-    outline: 2px solid red;
-    display: block;
   }
 
   &__inputs-container {
+    display: flex;
     flex-direction: column;
+    justify-content: start;
     color: $inside-color;
     margin-bottom: 30px;
   }
@@ -42,18 +48,21 @@
     outline-color: $active-color;
   }
 
-  &__icon-container > &_input {
+  .modal-form__icon-container > & {
     padding-left: 42px;
   }
 }
 
 // ====================for icons in intput area====================
 
-.modal-form__icon-container {
-  position: relative;
-  margin-bottom: 10px;
+.modal-form {
+  &__icon-container {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+  }
 
-  &--icon {
+  &__icon-container--icon {
     position: absolute;
     left: 0;
     //   /* transform: translate(50%, 50%); */
@@ -105,6 +114,7 @@
 // ========================for checkbox=====================
 
 .modal-form__checkbox-label {
+  display: flex;
   justify-content: center;
   // align-items: center;
   //   /* padding-left: 13px; */ /*это в случаи без display:flex*/

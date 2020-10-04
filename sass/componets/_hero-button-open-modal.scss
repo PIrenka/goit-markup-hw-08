@@ -11,8 +11,7 @@
 
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  // overflow: auto; // чтоб можно было скролить и модальное окно если оно выше чем вьюпорт
-  overflow: hidden;
+  overflow-y: scroll; // чтоб можно было скролить и модальное окно если оно выше чем вьюпорт
 }
 
 .backdrop.is-hidden {
@@ -32,10 +31,11 @@
 .modal {
   //   /* стили для модального окна */
   position: absolute;
+  // width: 300px;
   // top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  overflow-y: scroll;
+  transform: translate(-50%, 10%) scale(1);
+  overflow-y: hidden;
   // @include for-size(tablet-only) {
   //   // overflow-y: scroll;
 
@@ -72,10 +72,6 @@
     //   /* тут если убрать translate(-50%, -50%) получится тоже интересный эффект - с правого нижнего угла модалка поднимается и расширяется на центр */
   }
 
-  // body {
-  //   overflow: hidden;
-  // }
-
   &__button {
     //   /* стили для кнопки (крестик в кружочке) закрытия модального окна */
     position: absolute;
@@ -92,6 +88,7 @@
 
   &__icon-close {
     //   /* иконка крестика для закрытия модального окна */
+    display: block;
     width: 18px;
     height: 18px;
     fill: $logo-studio-color;
