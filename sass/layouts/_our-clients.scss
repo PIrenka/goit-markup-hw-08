@@ -33,16 +33,15 @@
 
 .our-clients__list-item {
   //   /* стили для выделения области пунктов списка */
-  border: 1px solid $team-social-icons-fill;
-  box-sizing: border-box;
-  border-radius: 4px;
-  flex-basis: calc((100% - 30px) / 2);
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
+  border: 1px solid $team-social-icons-fill;
+
+  border-radius: 4px;
+  flex-basis: calc((100% - 30px) / 2);
   height: 90px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,13 +55,6 @@
       margin-bottom: 30px;
     }
   }
-  // &:nth-child(2n-1) {
-  //   //   /* отступы между блоками логотипов компаний */
-  //   margin-right: 30px;
-  // }
-  // &:not(:nth-child(n + 5)) {
-  //   margin-bottom: 30px;
-  // }
 
   &:hover,
   &:focus {
